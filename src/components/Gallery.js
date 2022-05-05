@@ -81,39 +81,32 @@ const useStyles = makeStyles((theme) => ({
 
     },
     gallery__box: {
-        width: '100%',
+        minWidth: '280px',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
         gap: theme.spacing(2),
-        background: 'black',
         position: 'relative'
     },
     gallery__image: {
         width: '100%',
-        height: '74%',
+        height: '100%',
         objectFit: 'content',
-        background: 'black',
-        cursor: 'pointer',
-        borderRadius: '10px'
+        cursor: 'pointer'
     },
     gallery__markPrice: {
         position: 'absolute',
         backgroundColor: '#000',
         color: '#FFF',
-        padding: '.5rem',
-        marginTop: '10px',
-        marginRight: '10px',
-        borderRadius: '5px',
+        padding: '.4rem .8rem',
+        borderRadius: '0 0 0 14px',
         right: 0
     },
     gallery__content: {
-        width: "320px",
         display: 'flex',
         flexDirection: 'column',
         height: '100px',
-        justifyContent:'end',
-        marginTop: '0px'
+        justifyContent:'end'
     }
 }));
 
