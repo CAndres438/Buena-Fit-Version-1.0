@@ -7,6 +7,7 @@ const Detail = () => {
         <div>
         <DetailsContainer/>
         <GalleryContainer/>
+        ADD COMMENTS
         </div>
     )
 }
