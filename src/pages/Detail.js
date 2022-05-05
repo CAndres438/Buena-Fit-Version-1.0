@@ -3,11 +3,10 @@ import { DarkTypographyStyled, GrayTitleStyled, MarkPrice } from '../styled/styl
 
 //Material UI
 import { makeStyles, Typography } from '@material-ui/core';
-// import Details from './Details';
 import DetailsContainer from '../containers/DetailsContainer';
 import Gallery from '../components/Gallery';
 import Fade from 'react-reveal/Fade';
-// import CommentsContainer from '../containers/CommentsContainer';
+import CommentsContainer from '../containers/CommentsContainer';
 import Footer from '../components/Footer';
 import { useSelector } from 'react-redux';
 
@@ -62,7 +61,7 @@ const Detail = () => {
         </div>
 
         {/* Comments */}
-        {/* <CommentsContainer product={product}/> */}
+        <CommentsContainer product={product}/>
         {/* Comments */}
 
         </div>

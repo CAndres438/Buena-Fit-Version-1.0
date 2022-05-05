@@ -40,3 +40,8 @@ export const typesModal = {
 export const typesUsuarios = {
     search: 'search [USUARIOS]'
 }
+
+export const typesComments = {
+    add: 'add [COMMENTS]',
+    list: 'list [COMMENTS]'
+}

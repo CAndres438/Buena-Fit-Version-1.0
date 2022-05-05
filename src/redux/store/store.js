@@ -8,6 +8,7 @@ import { shoppingCartReducer } from "../reducers/shoppingCartReducer";
 import { modalReducer } from "../reducers/modalReducer";
 import { registerReducer } from "../reducers/registerReducer";
 import { usuariosReducer } from "../reducers/usuariosReducer";
+import { commentsReducer } from "../reducers/commentsReducer";
 
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
@@ -20,8 +21,8 @@ const reducersEnviar = combineReducers({
     cart: shoppingCartReducer,
     modal: modalReducer,
     fisics: fisicsReducer,
-    usuarios: usuariosReducer
-
+    usuarios: usuariosReducer,
+    comments: commentsReducer
 })
 
 export const store = createStore(
