@@ -10,7 +10,7 @@ import { addSyncToCart } from '../redux/actions/actionShoppingCart';
 
 
 
-const Gallery = ({categoria}) => {
+const Gallery = ({categoria = 'Elite'}) => {
     const classes = useStyles();
 
     const dispatch = useDispatch();
