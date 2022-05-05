@@ -42,11 +42,11 @@ const Gallery = ({categoria = 'Elite'}) => {
         {
             filtrado.map((card) => (
         <div key={card.codigo} className={classes.gallery__box}>
-            <img onMouseEnter={() => enviarDatosModal(card)} 
+            <img onClick={() => enviarDatosModal(card)} 
             className={classes.gallery__image} src={card.image__front} alt="F" />
             <span className={classes.gallery__markPrice}>{formatoCOP.format(card.precio)}</span>
             <div className={classes.gallery__content}>
-            <LinkRedirect to='/'>{card.nombre}</LinkRedirect>
+            <LinkRedirect to='/detalle'>{card.nombre}</LinkRedirect>
             <ButtonSecondary type="button" onClick={() => addToCart(modal)}>Agregar al Carrito</ButtonSecondary>
             </div>
         </div>
