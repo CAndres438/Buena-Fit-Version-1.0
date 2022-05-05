@@ -7,7 +7,7 @@ const Support = () => {
       <div className={classes.home__opacity}>
         <img
           className={classes.home__banner}
-          src="https://cdn.pixabay.com/photo/2017/10/22/09/02/man-2877135__340.jpg"
+          src="https://m.media-amazon.com/images/I/61u-qC6Z-mL._AC_SL1500_.jpg"
           alt="Banner Principal"
         />
         <div className={classes.banner__fadeBottom}></div>
