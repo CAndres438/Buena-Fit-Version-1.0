@@ -123,7 +123,7 @@ export const ButtonSecondary = styled.button`
   padding: 0.6rem 1.2rem;
   border-radius: 4px;
   border: 2px solid;
-  border-color: gray;
+  border-color: #333;
   outline: none;
 `;
 
