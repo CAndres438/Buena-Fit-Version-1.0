@@ -18,7 +18,7 @@ export const styles = {
     avatarHello: { 
         // Position
         position: 'absolute', 
-        left: 'calc(-100% - 44px - 28px)', 
+        left: 'calc(-100% - 114px - 28px)', 
         top: 'calc(50% - 24px)', 
         // Layering
         // zIndex: '10000',
@@ -34,12 +34,14 @@ export const styles = {
     supportWindow: {
         // Position
         position: 'fixed',
-        bottom: '116px',
-        right: '24px',
+        // bottom: '116px',
+        bottom: '20px',
+        // right: '24px',
+        right: '140px',
         zIndex: '10000',
         // Size
         width: '420px',
-        height: '530px',
+        height: '340px',
         maxWidth: 'calc(100% - 48px)',
         maxHeight: 'calc(100% - 48px)',
         backgroundColor: 'white',
@@ -57,7 +59,7 @@ export const styles = {
         transition: "all 0.5s ease",
         WebkitTransition: "all 0.5s ease",
         MozTransition: "all 0.5s ease",
-        backgroundImage: 'url(https://i.pinimg.com/474x/70/7a/62/707a624cc7ca2de60851e88344c71a04.jpg)',
+        backgroundImage: 'url(https://img.freepik.com/foto-gratis/mesa-madera-vacia-humo-flotando-sobre-fondo-oscuro_68495-135.jpg)',
 
     },
     stripe: {
@@ -66,7 +68,7 @@ export const styles = {
         width: '100%',
         height: '330px',
         backgroundColor: '#7a39e0',
-        backgroundImage: 'url(https://i.pinimg.com/originals/fe/5e/bf/fe5ebf4e96bf3bd51a34efdcf709152f.png)',
+        backgroundImage: 'url(https://img.freepik.com/foto-gratis/mesa-madera-vacia-humo-flotando-sobre-fondo-oscuro_68495-135.jpg)',
         // transform: 'skewY(-12deg)',
     },
     topText: { 
@@ -89,8 +91,8 @@ export const styles = {
     bottomText: { 
         position: 'absolute', 
         width: '100%', 
-        top: '60%', 
-        color: '#7a39e0', 
+        top: '70%', 
+        color: '#FFF', 
         fontSize: '24px', 
         fontWeight: '600' ,
         zIndex: '1000',

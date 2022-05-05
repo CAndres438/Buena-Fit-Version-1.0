@@ -113,7 +113,7 @@ const EmailForm = props => {
                 />
 
                 <div style={styles.topText}>
-                    Welcome to my <br /> support 👋
+                    Bienvenido a nuestro chat de <br /> Soporte 👋
                 </div>
 
                 <form 
@@ -126,10 +126,7 @@ const EmailForm = props => {
                         style={styles.emailInput}
                     />
                 </form>
-                
-                <div style={styles.bottomText}>
-                    Enter your email <br /> to get started.
-                </div>
+               
             </div>
         </div>
     )
