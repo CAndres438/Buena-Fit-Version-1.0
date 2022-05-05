@@ -82,6 +82,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage:
       "linear-gradient(180deg, transparent, rgba(37,37,37, 0.61), #000)",
   },
+  
   home__container: {
     width: "94%",
     margin: "10rem auto",
