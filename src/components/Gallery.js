@@ -46,7 +46,7 @@ const Gallery = ({categoria = 'Elite'}) => {
             <span className={classes.gallery__markPrice}>{formatoCOP.format(card.precio)}</span>
             <div className={classes.gallery__content}>
             <LinkRedirect to='/detalle'>{card.nombre}</LinkRedirect>
-            <ButtonSecondary type="button" onClick={() => addToCart(modal)}>Agregar al Carrito</ButtonSecondary>
+            <ButtonSecondary type="button" onClick={() => addToCart(card)}>Agregar al Carrito</ButtonSecondary>
             </div>
         </div>
             ))
