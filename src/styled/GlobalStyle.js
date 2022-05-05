@@ -16,13 +16,18 @@ const GlobalStyle = createGlobalStyle`
 
 body {
   margin: 0;
-  background-color: #000;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  ::-webkit-scrollbar {display: none;}
+  ::-webkit-scrollbar { 
+    visibility: none;
+  }
+  // background: rgb(183,183,183);
+  // background: linear-gradient(90deg, rgba(183,183,183,1) 0%, rgba(240,240,240,1) 44%, rgba(240,240,240,1) 57%, rgba(182,182,182,1) 100%);
+  background: rgb(14,15,19);
+background: linear-gradient(90deg, rgba(14,15,19,1) 0%, rgba(19,22,25,1) 44%, rgba(19,22,25,1) 57%, rgba(0,0,0,1) 100%);
   
 }
 

@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
           "&::-webkit-scrollbar-thumb": {
             backgroundColor: "white",
             outline: `1px solid slategrey`,
-            borderRadius: "5px"
+            borderRadius: "5px",
           },
         display: 'flex',
         alignItems: 'center',
@@ -81,7 +81,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     gallery__box: {
-        width: '300px',
+        width: '100%',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',
@@ -90,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
         position: 'relative'
     },
     gallery__image: {
-        width: '320px',
+        width: '100%',
         height: '74%',
         objectFit: 'content',
         background: 'black',

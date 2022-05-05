@@ -27,7 +27,7 @@ const Home = () => {
 
       <div className={classes.home__container}>
         <div className={classes.home__content}>
-          <GrayTitleStyled>Buona Fit Innovando en el Mundo del Fitness</GrayTitleStyled>
+          <GrayTitleStyled className={classes.home__title}>Buona Fit Innovando en el Mundo del Fitness</GrayTitleStyled>
           <div className={classes.text__container}>
           <GrayLightTypographyStyled>
             Por muchos años el mundo saludable ha estado ligado al mismo enfoque de desarrollo fisico, ignorando
@@ -90,8 +90,8 @@ const useStyles = makeStyles((theme) => ({
     gap: theme.spacing(4),
   },
 
-  text__container:{
-    width: "380px",
+  home__content: {
+    width: "580px",
   },
   home__images: {
     display: "grid",
@@ -113,6 +113,9 @@ const useStyles = makeStyles((theme) => ({
     width: "auto",
     top: "-40px",
   },
+  home__title: {
+    fontSize: '2rem'
+  }
 }));
 
 export default Home;
