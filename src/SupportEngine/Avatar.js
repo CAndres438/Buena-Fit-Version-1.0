@@ -1,8 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { styles } from './styles'
-
+import { getAuth } from "firebase/auth";
 const Avatar = props => {
+    const [user, setUser] = useState('Adam');
+
+    useEffect(() => {
+    const user = getAuth().currentUser.displayName;
+    setUser(user);
+    }, [])
+    
     const [hovered, setHovered] = useState(false)
 
     return (
@@ -11,10 +18,13 @@ const Avatar = props => {
                 className='transition-3'
                 style={{
                     ...styles.avatarHello,
-                    ...{ opacity: hovered ? '1' : '0' }
+                    ...{ 
+                        opacity: hovered ? '1' : '0',
+                        left: hovered ? 'calc(-100% - 232px - 28px)' : 'calc(-100% - 114px - 28px)'
+                    }
                 }}
             >
-                Hey it's Adam 🤙
+                Hola { user } 🤙
             </div>
 
             <div 
