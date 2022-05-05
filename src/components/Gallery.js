@@ -16,7 +16,7 @@ const Gallery = ({categoria = 'Elite'}) => {
     const dispatch = useDispatch();
 
     const { modal } = useSelector((store) => store.modal);
-
+    console.log('MODALLLL', modal);
     const { products } = useSelector(store => store.products);
 
     const filtrado = products.filter(item => item.categoria === categoria);

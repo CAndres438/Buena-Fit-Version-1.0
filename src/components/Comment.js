@@ -2,7 +2,7 @@ import React from 'react'
 
 //Material UI
 import { Avatar, makeStyles } from '@material-ui/core'
-import { TypographyStyled } from '../styled/styledcomponents';
+import { TypographyStyled } from '../styled/styledComponents';
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
 import MessageIcon from '@material-ui/icons/Message';
 import SendIcon from '@material-ui/icons/Send';
