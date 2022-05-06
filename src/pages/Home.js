@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   home: {
     width: "100%",
     position: "relative",
-    height: "100vh",
+    height: "100%",
   },
   home__opacity: {
     position: "relative",
