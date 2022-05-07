@@ -129,7 +129,7 @@ const useStyles = makeStyles((theme) => ({
   home: {
     width: "100%",
     position: "relative",
-    height: "100%",
+    height: "81vh",
   },
   home__opacity: {
     position: "relative",
@@ -220,13 +220,14 @@ const useStyles = makeStyles((theme) => ({
     // gridTemplateColumns: '1fr 1fr',
         gridTemplateColumns: '1fr',
 
-    height: '340px',
+    // height: '340px',
+    height: '400px',
     overflow: 'hidden',
     backgroundColor: '#000'
   },
   category__workoutImage: {
     width: '100%',
-    height: '340px',
+    height: '400px',
     objectFit: 'cover',
     cursor: 'pointer',
     transition: 'all .3s ease-in',
