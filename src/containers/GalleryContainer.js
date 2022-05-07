@@ -10,21 +10,31 @@ const GalleryContainer = () => {
   return (
     <div className={classes.root}>
         <div className={classes.galleryContainer__title}>
-        <p className={classes.galleryContainer__titlePrincipal}>COMPRA</p>
-        <p className={classes.galleryContainer__titleSecondary}>¡Y OBTEN RESULTADOS!</p>
+        <p className={classes.galleryContainer__titlePrincipal}>No esperes más</p>
+        <p className={classes.galleryContainer__titleSecondary}>¡Los más vendidos para Deportistas!</p>
         <div className={classes.galleryContainer__gallery}>
         <Fade right>
-        <Gallery categoria='Elite' />
+        <Gallery categoria='Competición' />
         </Fade>
         </div>
         </div>
+
+
         <div className={classes.galleryContainer__title}>
-        <p className={classes.galleryContainer__titlePrincipal}>Inspirado por tu historial de búsqueda</p>
+        <p className={classes.galleryContainer__titlePrincipal}>¡Los más populares para ganancia de masa!</p>
         <div className={classes.galleryContainer__gallery}>
         <Fade left>
-        <Gallery categoria='PopularProgress' />
+        <Gallery categoria='Aumento1' />
         </Fade>
+        </div>
+        </div>
 
+        <div className={classes.galleryContainer__title}>
+        <p className={classes.galleryContainer__titlePrincipal}>¡Lo más Funcional para gente Funcional!</p>
+        <div className={classes.galleryContainer__gallery}>
+        <Fade right>
+        <Gallery categoria='Funcional' />
+        </Fade>
         </div>
         </div>
 

@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
 
     },
     gallery__box: {
-        minWidth: '280px',
+        minWidth: '370px',
         height: '100%',
         display: 'flex',
         flexDirection: 'column',

@@ -5,6 +5,7 @@ import GalleryContainer from "../containers/GalleryContainer";
 import MapView from "./MapView";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -58,7 +59,7 @@ const Home = () => {
                   left: '56%',
                   transform: 'translateX(-50%)'
                 }}>
-                  <img className={classes.category__workoutImagePath} src="https://img.freepik.com/foto-gratis/hombre-atletico-fuerte-modelo-fitness-masculino-hermoso-que-muestra-torso-desnudo-cuerpo-musculoso-foto-estudio-sobre-fondo-negro-concepto-culturismo_116547-9372.jpg" alt="Workout Filter 1"/>
+                  <Link to="/aumenta"><img className={classes.category__workoutImagePath} src="https://img.freepik.com/foto-gratis/hombre-atletico-fuerte-modelo-fitness-masculino-hermoso-que-muestra-torso-desnudo-cuerpo-musculoso-foto-estudio-sobre-fondo-negro-concepto-culturismo_116547-9372.jpg" alt="Workout Filter 1"/></Link>
                 </div>
                 <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage({
                   categoria: "Definición",
@@ -67,7 +68,7 @@ const Home = () => {
                   left: '68%',
                   transform: 'translateX(-50%)'
                 }}>
-                  <img className={classes.category__workoutImagePath} src="https://us.123rf.com/450wm/valeriylebedev/valeriylebedev1501/valeriylebedev150100438/35826714-posando-culturista-poder-guapo-chico-atl%C3%A9tico-masculino-musculoso-cuerpo-de-fitness-en-el-fondo-negr.jpg" alt="Workout Filter 1"/>
+                  <Link to="/define"><img className={classes.category__workoutImagePath} src="https://us.123rf.com/450wm/valeriylebedev/valeriylebedev1501/valeriylebedev150100438/35826714-posando-culturista-poder-guapo-chico-atl%C3%A9tico-masculino-musculoso-cuerpo-de-fitness-en-el-fondo-negr.jpg" alt="Workout Filter 1"/></Link>
                 </div>
                 <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage({
                   categoria: "Funcional",
@@ -76,7 +77,7 @@ const Home = () => {
                   left: '44%',
                   transform: 'translateX(-50%)'
                 }}>
-                  <img className={classes.category__workoutImagePath} src="https://media.istockphoto.com/photos/athlete-at-starting-line-picture-id636887418?k=20&m=636887418&s=612x612&w=0&h=MBnEUG4vulPQ8XrxtfS3I03jZmprS3zAxFLe_VGuBGI=" alt="Workout Filter 1"/>
+                  <Link to="/evoluciona"><img className={classes.category__workoutImagePath} src="https://media.istockphoto.com/photos/athlete-at-starting-line-picture-id636887418?k=20&m=636887418&s=612x612&w=0&h=MBnEUG4vulPQ8XrxtfS3I03jZmprS3zAxFLe_VGuBGI=" alt="Workout Filter 1"/></Link>
                 </div>
                 <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage({
                   categoria: "Competición",
@@ -85,7 +86,7 @@ const Home = () => {
                   left: '32%',
                   transform: 'translateX(-50%)'
                 }}>
-                  <img className={classes.category__workoutImagePath} src="https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/q7atphktrkx9a4oxvdwr.jpg" alt="Workout Filter 1"/>
+                 <Link to="/compite"><img className={classes.category__workoutImagePath} src="https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/q7atphktrkx9a4oxvdwr.jpg" alt="Workout Filter 1"/></Link> 
                 </div>
               </div>
         </div>
