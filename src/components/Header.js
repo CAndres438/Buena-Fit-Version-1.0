@@ -44,7 +44,7 @@ const Header = () => {
             <div className={showMenu?  classes.header__menuFalse : classes.header__menu}>
             <div className={classes.header__links}>
                 <Link className={classes.header__link} to='/'>INICIO</Link>
-                <Link className={classes.header__link} to='/category'>CATEGORÍA</Link>
+                <Link className={classes.header__link} to='/products'>PRODUCTOS</Link>
                 <Link className={classes.header__link} to='/detalle'>DETALLE</Link>
                 <Link className={classes.header__link} to='/blog'>BLOG</Link>
             </div>

@@ -26,7 +26,7 @@ const DashboardRoutes = ({userAdmin}) => {
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/category" element={<Category />} />
+                <Route path="/products" element={<Category />} />
                 <Route path="/cart" element={<Cart />} />
                 {/* <Route path="/category" element={<Category />} /> */}
                 <Route path="/detalle" element={<Detail />} />

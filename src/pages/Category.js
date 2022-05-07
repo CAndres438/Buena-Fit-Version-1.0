@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 //Material UI
-import { makeStyles, Slider } from '@material-ui/core';
+import { makeStyles, Slider, Typography } from '@material-ui/core';
 import { ButtonSecondary, DarkTypographyStyled, GrayTitleStyled } from '../styled/styledComponents';
 import Footer from '../components/Footer';
 import { useDispatch, useSelector } from 'react-redux';
@@ -28,12 +28,11 @@ const Category = () => {
   
   return (
     <div className={classes.category}>
-      <img className={classes.category__banner} src='./principals-home/principal-2.jpg'/>
         {/* <Details /> */}
       <div className={classes.category__container}>
         
         <div className={classes.category__title}>
-          <GrayTitleStyled><i>PRODUCTOS</i></GrayTitleStyled>
+          <Typography className={classes.detail__title}><i>PRODUCTOS</i></Typography>
           
         </div>
         <div className={classes.category__selector}>
@@ -51,7 +50,7 @@ const Category = () => {
         {/* flex */}
           <div className={classes.category__containerFlex}>
               <div className={classes.category__containerFlexLineOne}>
-                <h2>TRENDING PRODUCTS</h2>
+                <h2 className={classes.detail__title}>TRENDING PRODUCTS</h2>
             <div className={classes.category__contentFlex}>
               <h4 className={classes.category__option} onClick={() => setFilter('otros')}>OTROS</h4>
               <h4 className={classes.category__option} onClick={() => setFilter('Elite')}>AUNMENTO</h4>
@@ -120,9 +119,6 @@ const useStyles = makeStyles((theme) => ({
     gap: theme.spacing(1.6)
   },
   category__containerFlex: {
-    // display: 'flex',
-    // alignItems: 'flex-start',
-    // justifyContent: 'space-between'
     display: 'grid',
     gridTemplateColumns: '1fr 2fr',
     gap: "40px",
@@ -193,7 +189,12 @@ category__workoutSpan: {
   top: '50%',
   left: '50%',
   transform: 'translateX(-50%)'
-}
+},
+detail__title: {
+  fontSize: '2.4rem',
+  color: '#5C5C5C',
+  fontWeight: 'bold'
+},
 }))
 
 export default Category
