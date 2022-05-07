@@ -4,6 +4,7 @@ import { GrayLightTypographyStyled, GrayTitleStyled } from '../styled/styledComp
 import GalleryContainer from "../containers/GalleryContainer";
 import MapView from "./MapView";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
 
 
@@ -12,17 +13,67 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   const classes = useStyles();
+  const [image, setImage] = useState('https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg');
 
   return (
     <div className={classes.home}>
       <div className={classes.home__opacity}>
         <img
           className={classes.home__banner}
-          src="https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839086_960_720.jpg"
+          src="https://cdn4.1000fitmeals.com/wp-content/uploads/2019/06/piernascondumbell.jpg"
           alt="Banner Principal"
         />
         <div className={classes.banner__fadeBottom}></div>
       </div>
+      <div className={classes.category__workout}>
+              <div className={classes.category__workoutFlex}>
+                <div className={classes.category__workoutContentImage}>
+                <img className={classes.category__workoutImage} src={image} alt='Workout 1'/>
+                <span className={classes.category__workoutSpan}>AUNMENTO</span>
+                </div>
+                {/* <div className={classes.category__workoutContentImage}>
+                <img className={classes.category__workoutImage} src='https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg' alt='Workout 2'/>
+                <span className={classes.category__workoutSpan}>DEFINICIÓN</span>
+                </div> */}
+              </div>
+              {/* <div className={classes.category__workoutFlex}>
+                <div className={classes.category__workoutContentImage}>
+                <img className={classes.category__workoutImage} src='https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg' alt='Workout 3'/>
+                <span className={classes.category__workoutSpan}>FUNCIONAL</span>
+                </div>
+                <div className={classes.category__workoutContentImage}>
+                <img className={classes.category__workoutImage} src='https://cdn.hsnstore.com/blog/wp-content/uploads/2017/11/mujer-perder-grasa-y-mantener-musculo.jpg' alt='Workout 4'/>
+                <span className={classes.category__workoutSpan}>COMPETICIÓN</span>
+                </div>
+              </div> */}
+              <div className={classes.category__workoutFilter}>
+                
+                <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage('https://img.freepik.com/foto-gratis/hombre-atletico-fuerte-modelo-fitness-masculino-hermoso-que-muestra-torso-desnudo-cuerpo-musculoso-foto-estudio-sobre-fondo-negro-concepto-culturismo_116547-9372.jpg')} style={{
+                  left: '56%',
+                  transform: 'translateX(-50%)'
+                }}>
+                  <img className={classes.category__workoutImagePath} src="https://img.freepik.com/foto-gratis/hombre-atletico-fuerte-modelo-fitness-masculino-hermoso-que-muestra-torso-desnudo-cuerpo-musculoso-foto-estudio-sobre-fondo-negro-concepto-culturismo_116547-9372.jpg" alt="Workout Filter 1"/>
+                </div>
+                <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage('https://us.123rf.com/450wm/valeriylebedev/valeriylebedev1501/valeriylebedev150100438/35826714-posando-culturista-poder-guapo-chico-atl%C3%A9tico-masculino-musculoso-cuerpo-de-fitness-en-el-fondo-negr.jpg')} style={{
+                  left: '68%',
+                  transform: 'translateX(-50%)'
+                }}>
+                  <img className={classes.category__workoutImagePath} src="https://us.123rf.com/450wm/valeriylebedev/valeriylebedev1501/valeriylebedev150100438/35826714-posando-culturista-poder-guapo-chico-atl%C3%A9tico-masculino-musculoso-cuerpo-de-fitness-en-el-fondo-negr.jpg" alt="Workout Filter 1"/>
+                </div>
+                <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage('https://media.istockphoto.com/photos/athlete-at-starting-line-picture-id636887418?k=20&m=636887418&s=612x612&w=0&h=MBnEUG4vulPQ8XrxtfS3I03jZmprS3zAxFLe_VGuBGI=')} style={{
+                  left: '44%',
+                  transform: 'translateX(-50%)'
+                }}>
+                  <img className={classes.category__workoutImagePath} src="https://media.istockphoto.com/photos/athlete-at-starting-line-picture-id636887418?k=20&m=636887418&s=612x612&w=0&h=MBnEUG4vulPQ8XrxtfS3I03jZmprS3zAxFLe_VGuBGI=" alt="Workout Filter 1"/>
+                </div>
+                <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage('https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/q7atphktrkx9a4oxvdwr.jpg')} style={{
+                  left: '32%',
+                  transform: 'translateX(-50%)'
+                }}>
+                  <img className={classes.category__workoutImagePath} src="https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/q7atphktrkx9a4oxvdwr.jpg" alt="Workout Filter 1"/>
+                </div>
+              </div>
+        </div>
       <SupportEngine />
 
       <div className={classes.home__container}>
@@ -141,7 +192,80 @@ const useStyles = makeStyles((theme) => ({
     color: '#333',
     fontSize: '1rem'
 
-  }
+  },
+  // CATEGORY__WORKOUT
+  category__workout: {
+    display: 'flex',
+    flexDirection: 'column'
+  },
+  category__workoutFlex: {
+    display: 'grid',
+    // gridTemplateColumns: '1fr 1fr',
+        gridTemplateColumns: '1fr',
+
+    height: '340px',
+    overflow: 'hidden',
+    backgroundColor: '#000'
+  },
+  category__workoutImage: {
+    width: '100%',
+    height: '340px',
+    objectFit: 'cover',
+    cursor: 'pointer',
+    transition: 'all .3s ease-in',
+    '&:hover': {
+      transform: 'scale(1.1)',
+      opacity: '.6'
+    },
+  },
+  category__workoutContentImage: {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
+   
+
+  },
+  category__workoutSpan: {
+    position: 'absolute',
+    fontSize: '2.4rem',
+    color: '#FFF',
+    top: '50%',
+    left: '50%',
+    transform: 'translateX(-50%)'
+  },
+  // Workout Filters
+    category__workoutFilter: {
+      width: '100%',
+      backgroundColor: '#000',
+      height: '200px',
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4, 200px)',
+      justifyContent: 'center',
+      // backgroundColor: 'transparent',
+      padding: '0 15rem',
+      position: 'relative',
+    },
+    category__workoutPathBox: {
+      width: '240px',
+      height: '100%',
+      backgroundColor: '#FFF',
+      clipPath: 'polygon(35% 0, 100% 0, 65% 100%, 0% 100%)',
+      position: 'absolute',
+      // zIndex: '100000'
+    },
+    category__workoutImagePath: {
+      width: '100%',
+      height: '100%',
+      backgroundColor: '#000',
+      clipPath: 'polygon(35% 0, 100% 0, 65% 100%, 0% 100%)',
+      cursor: 'pointer',
+      transition: 'all .3s ease-in',
+      left: '0',
+      '&:hover': {
+        transform: 'scale(1.1)',
+        opacity: '.6'
+      },
+    }
 }));
 
 export default Home;

@@ -78,18 +78,6 @@ const Category = () => {
           OR
            <DarkTypographyStyled>CHOOSE YOUR TRAINING</DarkTypographyStyled>
         </div>
-        <div className={classes.category__workout}>
-              <div className={classes.category__workoutFlex}>
-                <div className={classes.category__workoutContentImage}>
-                <img className={classes.category__workoutImage} src='https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg' alt='Workout 1'/>
-                <span className={classes.category__workoutSpan}>AUNMENTO</span>
-                </div>
-                <div className={classes.category__workoutContentImage}>
-                <img className={classes.category__workoutImage} src='https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg' alt='Workout 2'/>
-                <span className={classes.category__workoutSpan}>DEFINICIÓN</span>
-                </div>
-              </div>
-        </div>
         <Footer />
     </div>
   )
@@ -147,29 +135,6 @@ const useStyles = makeStyles((theme) => ({
     width: '400px',
     margin: '0 auto'
   },
-  category__workout: {
-    display: 'flex',
-    flexDirection: 'column'
-  },
-  category__workoutFlex: {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
-    maxHeight: '280px',
-    overflow: 'hidden',
-    backgroundColor: '#000'
-  },
-  category__workoutImage: {
-    width: '100%',
-    height: '280px',
-    objectFit: 'cover',
-    cursor: 'pointer',
-    transition: 'all .3s ease-in',
-    '&:hover': {
-      transform: 'scale(1.1)',
-      opacity: '.6'
-    },
-  },
-
   category__contentFlex: {
     color: '#B5B5B5'
 },
@@ -177,19 +142,7 @@ category__option: {
   margin: '1rem 0',
   cursor: 'pointer'
 },
-category__workoutContentImage: {
-  position: 'relative',
-  width: '100%',
-  height: '100%'
-},
-category__workoutSpan: {
-  position: 'absolute',
-  fontSize: '2.4rem',
-  color: '#FFF',
-  top: '50%',
-  left: '50%',
-  transform: 'translateX(-50%)'
-},
+
 detail__title: {
   fontSize: '2.4rem',
   color: '#5C5C5C',
