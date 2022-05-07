@@ -40,9 +40,9 @@ const DetailsContainer = ({product = initialState}) => {
   return (
     <div className={classes.details}>
       <div className={classes.details__options}>
-        <img onMouseEnter={() => setImage(modal.image__front)} className={classes.details__optionImage} src={modal.image__front}alt="front"/>
-        <img onMouseEnter={() => setImage(modal.image__lateral)} className={classes.details__optionImage} src={modal.image__lateral} alt="lateral"/>
-        <img onMouseEnter={() => setImage(modal.image__back)} className={classes.details__optionImage} src={modal.image__back} alt="back"/>
+      <img onMouseEnter={() => setImage(product.image__front)} className={classes.details__optionImage} src={product.image__front} alt='front'/>
+      <img onMouseEnter={() => setImage(product.image__lateral)} className={product.image__lateral?classes.details__optionImage : classes.displayNone} src={product.image__lateral? product.image__lateral : product.image__front} alt='lateral'/>
+      <img onMouseEnter={() => setImage(product.image__back)} className={product.image__lateral?classes.details__optionImage : classes.displayNone} src={product.image_back? product.image__back: product.image__front} alt='back'/>
       </div>
       {/* Card Detail */}
       <div className={classes.details__detail2}>
@@ -270,6 +270,9 @@ button__rounded: {
 clickInfoDetails: {
     cursor: 'pointer',
     color: 'blue',
+},
+displayNone: {
+  display: 'none',
 }
 }));
 
