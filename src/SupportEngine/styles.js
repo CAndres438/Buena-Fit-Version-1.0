@@ -51,6 +51,7 @@ export const styles = {
         overflow: 'hidden',
         // Shadow
         boxShadow: '0px 0px 16px 6px rgba(0, 0, 0, 0.33)',
+        // display: 'none'
     },
     emailFormWindow: { 
         width: '100%',  
