@@ -82,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "2rem",
   },
   footer__container: {
-    width: "100%",
+    width: "90%",
     margin: "0 auto",
     display: "flex",
     flexDirection: "column",
