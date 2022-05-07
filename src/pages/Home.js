@@ -20,7 +20,7 @@ const Home = () => {
       <div className={classes.home__opacity}>
         <img
           className={classes.home__banner}
-          src="https://cdn4.1000fitmeals.com/wp-content/uploads/2019/06/piernascondumbell.jpg"
+          src="https://cdn.pixabay.com/photo/2021/01/04/06/21/man-5886574_1280.jpg"
           alt="Banner Principal"
         />
         <div className={classes.banner__fadeBottom}></div>
@@ -121,6 +121,7 @@ const useStyles = makeStyles((theme) => ({
   },
   home__banner: {
     width: "100%",
+    height: '80vh',
     position: "relative",
   },
   banner__fadeBottom: {
@@ -133,6 +134,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage:
       "linear-gradient(180deg, transparent, rgba(37,37,37, 0.61), #000)",
   },
+  
   home__container: {
     width: "94%",
     margin: "6rem auto",
