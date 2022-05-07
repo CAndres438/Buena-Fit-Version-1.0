@@ -46,7 +46,10 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         justifyContent: 'flex-end',
         alignItems: 'center',
-        gap: theme.spacing(2)
+        gap: theme.spacing(2),
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center',
+        }
     },
     header__link: {
         color: '#FFF',
@@ -62,19 +65,25 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         flex: '.4',
         alignItems: 'center',
-        borderRadius: '24px',
+        borderRadius: '2px',
         zIndex: '3000000',
-
+        height: '30px',
+        backgroundColor: '#FFF',
+        [theme.breakpoints.down('sm')]: {
+            flex: '.8',
+        }
     },
     header__searchInput: {
-        height: '12px',
+        height: '100%',
         padding: '10px',
-        border: 'none',
         width: '100%',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        border: 'none',
+        outline: 'none',
+        borderRadius: '2px',
     },
     header__searchIcon: {
-        padding: '5px',
+        height: '100%',
         height: '22px !important',
         backgroundColor: '#FFF'
     }
