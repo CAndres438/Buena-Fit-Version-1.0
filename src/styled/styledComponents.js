@@ -41,7 +41,7 @@ export const GrayTitleStyled1 = styled(Typography)`
 
 export const GrayLightTypographyStyled = styled(Typography)`
   padding-top: 15px;
-  color: white;
+  color: #5C5C5C;
   font-size: 1.1rem;
   text-align: justify;
 `;
@@ -54,7 +54,7 @@ export const GrayLightTypographyStyled1 = styled(Typography)`
 `;
 
 export const DarkTypographyStyled = styled(Typography)`
-  color: white;
+  color: #5C5C5C;
   font-size: 1.1rem;
 `;
 
@@ -71,6 +71,7 @@ export const ButtonPrincipal = styled.button`
     border-radius: 50px;
     border: none;
     outline: none;
+    cursor: pointer;
 `;
 
 export const SignInButton = styled.button`

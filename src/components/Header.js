@@ -68,6 +68,7 @@ const Header = () => {
                 </Link>
                 <Link className={classes.header__link} to='/cart'>
                 <ShoppingCartIcon />
+                <span>{cart.length}</span>
                 </Link>
             <MenuIcon className={classes.menuIcon} onClick={() => setShowMenu(!showMenu)}/>
             </div>
