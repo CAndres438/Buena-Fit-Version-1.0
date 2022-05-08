@@ -18,6 +18,7 @@ import Competition from "../pages/Competition";
 import Funcional from "../pages/Funcional";
 import Gain from "../pages/Gain";
 import Burn from "../pages/Burn";
+import BuonaTest from "../pages/BuonaTest";
 
 
 const promise = loadStripe (
@@ -34,6 +35,8 @@ const DashboardRoutes = ({userAdmin}) => {
                 <Route path="/cart" element={<Cart />} />
                 {/* <Route path="/category" element={<Category />} /> */}
                 <Route path="/detalle" element={<Detail />} />
+
+                <Route path="/buonaTest" element={<BuonaTest/>}/>
 
                 <Route path="/compite" element={<Competition/>} />
                 <Route path="/evoluciona" element={<Funcional/>} />
