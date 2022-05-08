@@ -18,7 +18,7 @@ export const styles = {
     avatarHello: { 
         // Position
         position: 'absolute', 
-        left: 'calc(-100% - 114px - 28px)', 
+        left: 'calc(-100% - 44px - 28px)', 
         top: 'calc(50% - 24px)', 
         // Layering
         // zIndex: '10000',
@@ -51,7 +51,6 @@ export const styles = {
         overflow: 'hidden',
         // Shadow
         boxShadow: '0px 0px 16px 6px rgba(0, 0, 0, 0.33)',
-        // display: 'none'
     },
     emailFormWindow: { 
         width: '100%',  
