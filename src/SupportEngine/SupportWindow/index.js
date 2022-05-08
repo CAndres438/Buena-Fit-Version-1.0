@@ -14,7 +14,6 @@ const SupportWindow = props => {
             className='transition-5'
             style={{
                 ...styles.supportWindow,
-                display: props.visible? "block" : "none", 
                 ...{ opacity: props.visible ? '1' : '0' }
             }}
         >

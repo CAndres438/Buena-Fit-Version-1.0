@@ -1,18 +1,39 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 import { styles } from "../styles"
 
 import axios from 'axios'
-
+import { ButtonSecondary } from '../../../src/styled/styledComponents';
 // import { LoadingOutlined } from '@ant-design/icons'
 
 import Avatar from '../Avatar'
+import { getAuth, onAuthStateChanged } from "firebase/auth"
 
 const EmailForm = props => {    
-    const [email, setEmail] = useState('')
+    const [email, setEmail] = useState('') 
     const [loading, setLoading] = useState(false)
 
+    useEffect(() => {
+        const auth = getAuth()
+        onAuthStateChanged(auth, (user)=>{
+            // dispatch(searchAsync(user.email))
+            if(user?.uid){
+            //   setIsLoggedIn(true);
+              console.log('usuario app emailFormChat', user.email);
+              setEmail(user.email);
+            }
+            else{
+                // setIsLoggedIn(false)
+            }
+            // setChecking(false)
+        })
+    
+        // [setIsLoggedIn, setChecking]
+     },[]);
+    
+
     function getOrCreateUser(callback) {
+        console.log('EMAIIIIIIIL', email);
         axios.put(
             'https://api.chatengine.io/users/',
             {username: email, email: email, secret: email},
@@ -25,8 +46,8 @@ const EmailForm = props => {
         .catch(e => console.log('Get or create user error', e))
     }
 
-    console.log('project',process.env.REACT_APP_CE_PROJECT_ID);
-    console.log(process.env.REACT_APP_CE_PRIVATE_KEY);
+    // console.log('project',process.env.REACT_APP_CE_PROJECT_ID); => HACER UN USE MEMO DE ESTE COMPONENTE
+    // console.log(process.env.REACT_APP_CE_PRIVATE_KEY);
 
 
     function getOrCreateChat(callback) {
@@ -71,7 +92,7 @@ const EmailForm = props => {
                 ...styles.emailFormWindow,
                 ...{ 
                     height: props.visible ? '100%' : '0px',
-                    opacity: props.visible ? '1' : '0'
+                    opacity: props.visible ? '1' : '0',
                 }
             }}
         >
@@ -113,7 +134,7 @@ const EmailForm = props => {
                 />
 
                 <div style={styles.topText}>
-                    Bienvenido a nuestro chat de <br /> Soporte 👋
+                    Welcome to my <br /> support 👋
                 </div>
 
                 <form 
@@ -121,12 +142,24 @@ const EmailForm = props => {
                     style={{ position: 'relative', width: '100%', top: '19.75%' }}
                 >
                     <input 
-                        placeholder='Your Email'
-                        onChange={e => setEmail(e.target.value)}
+                        placeholder='Enter'
+                        // onChange={e => setEmail(e.target.value)}
                         style={styles.emailInput}
                     />
+                    {/* <ButtonSecondary
+                    style={{
+                        position: 'absolute',
+                        left: '50%',
+                        transform: 'translateX(-50%)'
+                    }}
+                    >
+                        EMPEZAR A CHATEAR
+                    </ButtonSecondary> */}
                 </form>
-               
+                
+                <div style={styles.bottomText}>
+                    Enter the chat<br /> to get started.
+                </div>
             </div>
         </div>
     )
