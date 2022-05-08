@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className={classes.navbar__container}>
             <div className={classes.header__links}>
                 <Link className={classes.header__link} to='/shop'>VENTAS</Link>
-                <Link className={classes.header__link} to='/test'>BUONA TEST</Link>
+                <Link className={classes.header__link} to='/buonaTest'>BUONA TEST</Link>
                 <Link className={classes.header__link} to='/training'>ENTRENAMIENTOS</Link>
                 <Link className={classes.header__link} to='/support'>SOPORTE</Link>
 
