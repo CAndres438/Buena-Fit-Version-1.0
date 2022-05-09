@@ -10,7 +10,6 @@ export const styles = {
         backgroundPosition: 'center',
         backgroundSize: '84px',
         // zIndex: '1000',
-
         // Size
         width: '84px',
         height: '84px',
@@ -49,6 +48,7 @@ export const styles = {
         borderRadius: '12px',
         border: `2px solid #7a39e0`,
         overflow: 'hidden',
+
         // Shadow
         boxShadow: '0px 0px 16px 6px rgba(0, 0, 0, 0.33)',
     },

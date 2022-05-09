@@ -7,11 +7,6 @@ import Footer from "../components/Footer";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
-
-
-
-
 const Home = () => {
   const classes = useStyles();
   const [image, setImage] = useState({
@@ -35,21 +30,8 @@ const Home = () => {
                 <img className={classes.category__workoutImage} src={image.image} alt='Workout 1'/>
                 <span className={classes.category__workoutSpan}>{image.categoria}</span>
                 </div>
-                {/* <div className={classes.category__workoutContentImage}>
-                <img className={classes.category__workoutImage} src='https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg' alt='Workout 2'/>
-                <span className={classes.category__workoutSpan}>DEFINICIÓN</span>
-                </div> */}
               </div>
-              {/* <div className={classes.category__workoutFlex}>
-                <div className={classes.category__workoutContentImage}>
-                <img className={classes.category__workoutImage} src='https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg' alt='Workout 3'/>
-                <span className={classes.category__workoutSpan}>FUNCIONAL</span>
-                </div>
-                <div className={classes.category__workoutContentImage}>
-                <img className={classes.category__workoutImage} src='https://cdn.hsnstore.com/blog/wp-content/uploads/2017/11/mujer-perder-grasa-y-mantener-musculo.jpg' alt='Workout 4'/>
-                <span className={classes.category__workoutSpan}>COMPETICIÓN</span>
-                </div>
-              </div> */}
+
               <div className={classes.category__workoutFilter}>
                 
                 <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage({
@@ -214,7 +196,7 @@ const useStyles = makeStyles((theme) => ({
   // CATEGORY__WORKOUT
   category__workout: {
     display: 'flex',
-    flexDirection: 'column'
+    flexDirection: 'column',
   },
   category__workoutFlex: {
     display: 'grid',
@@ -224,25 +206,28 @@ const useStyles = makeStyles((theme) => ({
     // height: '340px',
     height: '400px',
     overflow: 'hidden',
-    backgroundColor: '#000'
+    backgroundColor: '#000',
   },
   category__workoutImage: {
+    position: 'absolute',
     width: '100%',
-    height: '400px',
+    top: '0',
+    // bottom: '0',
+    height: '100%',
     objectFit: 'cover',
     cursor: 'pointer',
     transition: 'all .3s ease-in',
     '&:hover': {
       transform: 'scale(1.1)',
-      opacity: '.6'
+      // opacity: '.6'
     },
   },
   category__workoutContentImage: {
-    position: 'relative',
+    position: 'absolute',
     width: '100%',
-    height: '100%',
-   
-
+    height: '105%',
+    zIndex: '1000',
+    overflow: 'hidden',
   },
   category__workoutSpan: {
     position: 'absolute',
@@ -256,12 +241,11 @@ const useStyles = makeStyles((theme) => ({
   // Workout Filters
     category__workoutFilter: {
       width: '100%',
-      backgroundColor: '#000',
+      // backgroundColor: '#000',
       height: '200px',
       display: 'grid',
       gridTemplateColumns: 'repeat(4, 200px)',
       justifyContent: 'center',
-      // backgroundColor: 'transparent',
       padding: '0 15rem',
       position: 'relative',
     },
@@ -271,6 +255,7 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: '#FFF',
       clipPath: 'polygon(35% 0, 100% 0, 65% 100%, 0% 100%)',
       position: 'absolute',
+      zIndex: 1000
       // zIndex: '100000'
     },
     category__workoutImagePath: {

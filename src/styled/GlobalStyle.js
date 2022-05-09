@@ -29,6 +29,7 @@ body {
   // background: rgb(14,15,19);
   // background: linear-gradient(90deg, rgba(14,15,19,1) 0%, rgba(19,22,25,1) 44%, rgba(19,22,25,1) 57%, rgba(0,0,0,1) 100%);
      background: #FFF;
+     overflow-x: hidden;
 }
 
 /* chat */

@@ -20,9 +20,9 @@ const ChatEngine = props => {
                 ...styles.chatEngineWindow,
                 ...{ 
                     height: props.visible ? '100%' : '0px',
-                    zIndex: props.visible ? '100' : '0',
+                    zIndex: props.visible ? '100%' : '0',
                     width: '100%',
-                    backgroundColor: 'white'
+                    backgroundColor: 'white',
                 }
             }}
         >
