@@ -15,7 +15,7 @@ const Category = () => {
   const { products } = useSelector(store => store.products);
   const dispatch = useDispatch();
 
-  const [filter, setFilter] = useState('otros');
+  const [filter, setFilter] = useState('Definición');
   const [ammount, setAmmount] = useState(500000);
 
   const handleChange = (e ,newValue) => {
@@ -36,7 +36,7 @@ const Category = () => {
           
         </div>
         <div className={classes.category__selector}>
-          <DarkTypographyStyled>PRECIO</DarkTypographyStyled>
+          <DarkTypographyStyled>Precio</DarkTypographyStyled>
             <Slider 
             value={ammount}
             onChange={handleChange}
@@ -50,17 +50,18 @@ const Category = () => {
         {/* flex */}
           <div className={classes.category__containerFlex}>
               <div className={classes.category__containerFlexLineOne}>
-                <h2 className={classes.detail__title}>TRENDING PRODUCTS</h2>
+                <h2 className={classes.detail__title}>Trending Products</h2>
             <div className={classes.category__contentFlex}>
-              <h4 className={classes.category__option} onClick={() => setFilter('otros')}>OTROS</h4>
-              <h4 className={classes.category__option} onClick={() => setFilter('Elite')}>AUNMENTO</h4>
-              <h4 className={classes.category__option} onClick={() => setFilter('PopularProgress')}>DEFINICIÓN</h4>
+              <h4 className={classes.category__option} onClick={() => setFilter('Definición')}>Definición</h4>
+              <h4 className={classes.category__option} onClick={() => setFilter('Aumento')}>Aumento</h4>
+              <h4 className={classes.category__option} onClick={() => setFilter('Competición')}>Competición</h4>
+              <h4 className={classes.category__option} onClick={() => setFilter('Funcional')}>Funcional</h4>
             </div>
               </div>
               <div className={classes.category__containerFlexLineTwo}>
                  {
                    products.filter((item) => item.categoria === filter)
-                    .filter((item) => item.precio < ammount)
+                    .filter((item) =>   item.precio < ammount)
                     .map((item,index) => (
                       <Product 
                       key={index}
@@ -73,11 +74,11 @@ const Category = () => {
         
         {/* flex */}
       </div>
-      <div className={classes.category__title}>
+      {/* <div className={classes.category__title}>
           <ButtonSecondary>LOAD MORE</ButtonSecondary>
           OR
            <DarkTypographyStyled>CHOOSE YOUR TRAINING</DarkTypographyStyled>
-        </div>
+        </div> */}
         <Footer />
     </div>
   )
