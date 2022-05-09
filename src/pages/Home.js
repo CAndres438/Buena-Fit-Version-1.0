@@ -24,7 +24,7 @@ const Home = () => {
       <div className={classes.home__opacity}>
         <img
           className={classes.home__banner}
-          src="https://cdn.pixabay.com/photo/2021/01/04/06/21/man-5886574_1280.jpg"
+          src="https://cdn.pixabay.com/photo/2018/01/01/01/56/yoga-3053487_960_720.jpg"
           alt="Banner Principal"
         />
         <div className={classes.banner__fadeBottom}></div>
@@ -35,21 +35,7 @@ const Home = () => {
                 <img className={classes.category__workoutImage} src={image.image} alt='Workout 1'/>
                 <span className={classes.category__workoutSpan}>{image.categoria}</span>
                 </div>
-                {/* <div className={classes.category__workoutContentImage}>
-                <img className={classes.category__workoutImage} src='https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg' alt='Workout 2'/>
-                <span className={classes.category__workoutSpan}>DEFINICIÓN</span>
-                </div> */}
               </div>
-              {/* <div className={classes.category__workoutFlex}>
-                <div className={classes.category__workoutContentImage}>
-                <img className={classes.category__workoutImage} src='https://www.cope.es/blogs/t-cuidamos/wp-content/uploads/sites/12/2018/12/gimnasio.jpg' alt='Workout 3'/>
-                <span className={classes.category__workoutSpan}>FUNCIONAL</span>
-                </div>
-                <div className={classes.category__workoutContentImage}>
-                <img className={classes.category__workoutImage} src='https://cdn.hsnstore.com/blog/wp-content/uploads/2017/11/mujer-perder-grasa-y-mantener-musculo.jpg' alt='Workout 4'/>
-                <span className={classes.category__workoutSpan}>COMPETICIÓN</span>
-                </div>
-              </div> */}
               <div className={classes.category__workoutFilter}>
                 
                 <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage({
