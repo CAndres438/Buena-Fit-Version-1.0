@@ -1,7 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core'
 import Gallery from '../components/Gallery';
-import { DarkTypographyStyled, GrayTitleStyled } from '../styled/styledComponents';
 import Fade from 'react-reveal/Fade';
 
 const GalleryContainer = () => {

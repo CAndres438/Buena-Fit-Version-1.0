@@ -24,9 +24,9 @@ const Detail = () => {
 
 
   return (
-    <div className={classes.detail}>
+    <div id="hola" className={classes.detail}>
       {/* <img className={classes.detail__banner} src='./principals-home/principal-2.jpg'/> */}
-        <DetailsContainer product={product}/>
+        <DetailsContainer  product={product}/>
       <div className={classes.detail__container}>
         
         <div className={classes.detail__boxTitle}>
@@ -55,7 +55,7 @@ const Detail = () => {
         <DarkTypographyStyled>¡OBTEN RESULTADOS!</DarkTypographyStyled>
         <div className={classes.galleryContainer__gallery}>
         <Fade right>
-        <Gallery categoria='PopularProgress' />
+        <Gallery categoria='Definición' />
         </Fade>
         </div>
         </div>

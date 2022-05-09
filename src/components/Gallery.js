@@ -6,6 +6,7 @@ import { listAsync } from '../redux/actions/actionProducts';
 import { selectedModal } from '../redux/actions/actionModal';
 import { formatoCOP } from '../utils/Moneda';
 import { addSyncToCart } from '../redux/actions/actionShoppingCart';
+import { Link } from 'react-router-dom';
 
 
 
@@ -40,13 +41,13 @@ const Gallery = ({categoria = 'Elite'}) => {
     <div className={classes.root}>
         {
             filtrado.map((card) => (
-        <div key={card.codigo} className={classes.gallery__box}>
-            <img onClick={() => enviarDatosModal(card)} 
-            className={classes.gallery__image} src={card.image__front} alt="F" />
+        <div  key={card.codigo} className={classes.gallery__box}>
+            <Link to="/detalle"><img onClick={() => enviarDatosModal(card)} 
+            className={classes.gallery__image} src={card.image__front} alt="F"/></Link>
             <span className={classes.gallery__markPrice}>{formatoCOP.format(card.precio)}</span>
             <div className={classes.gallery__content}>
             <LinkRedirect to='/detalle'>{card.nombre}</LinkRedirect>
-            <ButtonSecondary type="button" onClick={() => addToCart(card)}>Agregar al Carrito</ButtonSecondary>
+            <ButtonSecondary type="button"  onClick={() => addToCart(card)}>Agregar al Carrito</ButtonSecondary>
             </div>
         </div>
             ))
