@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core';
 import { ButtonSecondary, LinkRedirect} from '../styled/styledComponents';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector} from 'react-redux';
 import { listAsync } from '../redux/actions/actionProducts';
 import { selectedModal } from '../redux/actions/actionModal';
 import { formatoCOP } from '../utils/Moneda';
 import { addSyncToCart } from '../redux/actions/actionShoppingCart';
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 
 
 
@@ -25,6 +25,7 @@ const Gallery = ({categoria = 'Elite'}) => {
 
     const enviarDatosModal = (codigo) => {
         dispatch(selectedModal(codigo));
+        
     }
     
     useEffect(() => {
@@ -33,7 +34,6 @@ const Gallery = ({categoria = 'Elite'}) => {
 
     const addToCart = (productCart) => {
         dispatch(addSyncToCart (productCart));
-        
       };
 
   return (

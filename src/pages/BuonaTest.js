@@ -69,7 +69,7 @@ const BuonaTest = () => {
     if (imc < 18.5) {
       return "Bajo Peso, se recomienda una fase de aumento.";
     } else if (imc < 24.9) {
-      return "Peso Normal, se recomienda incrementar o recompone.r";
+      return "Peso Normal, se recomienda incrementar o recomponer.";
     } else if (imc < 29.9) {
       return "Un poco por encima, se recomienda recomponer.";
     } else if (imc < 34.9) {
