@@ -53,6 +53,13 @@ export const GrayLightTypographyStyled1 = styled(Typography)`
   text-align: center;
 `;
 
+export const GrayLightTypographyStyled2 = styled(Typography)`
+  padding-top: 15px;
+  color: white;
+  font-size: small;
+  text-align: center;
+`;
+
 export const DarkTypographyStyled = styled(Typography)`
   color: #5C5C5C;
   font-size: 1.1rem;

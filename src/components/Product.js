@@ -2,12 +2,13 @@ import React from 'react';
 
 //Material UI
 import { makeStyles, Typography } from '@material-ui/core';
-import { ButtonSecondary, DarkTypographyStyled, GrayLightTypographyStyled, MarkPrice } from '../styled/styledComponents';
+import { ButtonSecondary, GrayLightTypographyStyled2} from '../styled/styledComponents';
 import ShoppingCart from '@material-ui/icons/ShoppingCart';
 import { useDispatch } from 'react-redux';
 import { selectedModal } from '../redux/actions/actionModal';
 import { addSyncToCart } from '../redux/actions/actionShoppingCart';
 import { useNavigate } from 'react-router-dom';
+import { formatoCOP } from '../utils/Moneda';
 
 const Product = ({product}) => {
   const classes = useStyles();
@@ -26,14 +27,14 @@ const Product = ({product}) => {
 
   return (
     <div className={classes.product}>
-        <img className={classes.product__image} src={product.image__front} onClick={() => enviarDatosModal(product)}/>
+        <img className={classes.product__image} src={product.image__front} onClick={() => enviarDatosModal(product)} alt=""/>
         <div className={classes.product__content}>
           <div>
             <Typography className={classes.product__categoria}>{product.categoria}</Typography>
-            <GrayLightTypographyStyled>Women Whey Protein</GrayLightTypographyStyled>
+            <GrayLightTypographyStyled2>{product.nombre}</GrayLightTypographyStyled2>
           </div>
             <ButtonSecondary onClick={() => addToCart(product)}>Agregar <ShoppingCart /></ButtonSecondary>
-            <Typography className={classes.product__markPrice}>${product.precio}</Typography>
+            <Typography className={classes.product__markPrice}>{formatoCOP.format(product.precio)}</Typography>
 
         </div>
     </div>
@@ -74,9 +75,9 @@ const useStyles = makeStyles((theme) => ({
       right: 0,
   },
   product__categoria: {
-    textTransform: 'uppercase',
-    color: 'blue',
-    fontWeight: '540'
+    color: 'gray',
+    fontWeight: '700',
+    textAlign: 'center'
   }
 }))
 
