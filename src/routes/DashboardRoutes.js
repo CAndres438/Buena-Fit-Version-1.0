@@ -19,6 +19,8 @@ import Funcional from "../pages/Funcional";
 import Gain from "../pages/Gain";
 import Burn from "../pages/Burn";
 import BuonaTest from "../pages/BuonaTest";
+import Training from "../pages/Training";
+import Exercise from "../pages/Exercise";
 
 
 const promise = loadStripe (
@@ -42,6 +44,8 @@ const DashboardRoutes = ({userAdmin}) => {
                 <Route path="/evoluciona" element={<Funcional/>} />
                 <Route path="/aumenta" element={<Gain/>} />
                 <Route path="/define" element={<Burn/>} />
+                <Route path="/training" element={<Training/>}/>
+                <Route path="/exercise/:id" element={<Exercise />}/>
 
                 {/* <Route path="/blog" element={<Blog />} /> */}
                 <Route path="/payment" element={

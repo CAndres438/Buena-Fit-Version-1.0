@@ -1,0 +1,89 @@
+{
+    "training": [
+        {
+            "id": 1,
+            "categoria": "superior",
+            "titulo": "press de banca",
+            "zona": "pecho",
+            "poster": "https://i.ytimg.com/vi/JhcjQHkjklA/sddefault.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652066415/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20SUPERIOR/PECHO/PRESS/1/press1_xpnp5g.mp4",
+            "descripcion1": "Para iniciar la realización del ejercicio es necesario acostarse en un banco plano con los glúteos, caderas y hombros sobre el banco. Los pies deben apoyarse en suelo, separados un poco más allá del ancho de lo hombros. Con las manos debemos tomar la barra de manera que las palmas miren hacia adelante, es decir, en pronación, y separadas ligeramente más allá de la anchura de los hombros.",
+            "descripcion2": "El brazo y el antebrazo deben formar un ángulo de 90º, por lo que debemos flexionar el codo de manera que la barra tomada con las manos quede exactamente encima del pecho.",
+            "descripcion3": "Desde allí debemos inspirar y descender lentamente la barra hacia el pecho, sin despegar la espalda del banco. Una vez la barra esté sobre el pecho debemos empujar hacia arriba mientras espiramos y subimos lentamente los brazos.",
+            "musculos": "Con press de banca solicitamos principalmente el pectoral mayor, aunque también se demanda el trabajo del pectoral menor, los tríceps, el deltoides anterior, los serratos y el coracobraquial.",
+            "errores": {
+                "error1": "Arquear la espalda y despegarla del banco al levantar la barra. Esto puede dañar la espalda al intentar ayudarnos arqueando la misma, donde despegamos al zona lumbar del punto de apoyo.",
+                "error2": "Realizar movimientos bruscos y rebotar. Al ser un ejercicio de musculación los resultados será mejores y el movimiento más seguro si evitamos rebotar la barra contra el pecho, así como si evitamos dar tirones con la barra, pues lo mejor es realizar un movimiento controlado durante todo el recorrido del ejercicio, de manera que trabajen los músculos antes dichos y evitemos lesiones.",
+                "error3": "Los codos descienden hacia la cintura. Para que el trabajo del pectoral sea correcto, los codos deben descender alineados con los hombros y no debemos tirar los brazos hacia la cintura al bajar la barra."
+            }
+        },
+        {
+            "id": 2,
+            "categoria": "superior",
+            "titulo": "press de banca",
+            "zona": "pecho",
+            "poster": "https://i.ytimg.com/vi/JhcjQHkjklA/sddefault.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652066415/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20SUPERIOR/PECHO/PRESS/1/press1_xpnp5g.mp4",
+            "descripcion1": "Para iniciar la realización del ejercicio es necesario acostarse en un banco plano con los glúteos, caderas y hombros sobre el banco. Los pies deben apoyarse en suelo, separados un poco más allá del ancho de lo hombros. Con las manos debemos tomar la barra de manera que las palmas miren hacia adelante, es decir, en pronación, y separadas ligeramente más allá de la anchura de los hombros.",
+            "descripcion2": "El brazo y el antebrazo deben formar un ángulo de 90º, por lo que debemos flexionar el codo de manera que la barra tomada con las manos quede exactamente encima del pecho.",
+            "descripcion3": "Desde allí debemos inspirar y descender lentamente la barra hacia el pecho, sin despegar la espalda del banco. Una vez la barra esté sobre el pecho debemos empujar hacia arriba mientras espiramos y subimos lentamente los brazos.",
+            "musculos": "Con press de banca solicitamos principalmente el pectoral mayor, aunque también se demanda el trabajo del pectoral menor, los tríceps, el deltoides anterior, los serratos y el coracobraquial.",
+            "errores": {
+                "error1": "Arquear la espalda y despegarla del banco al levantar la barra. Esto puede dañar la espalda al intentar ayudarnos arqueando la misma, donde despegamos al zona lumbar del punto de apoyo.",
+                "error2": "Realizar movimientos bruscos y rebotar. Al ser un ejercicio de musculación los resultados será mejores y el movimiento más seguro si evitamos rebotar la barra contra el pecho, así como si evitamos dar tirones con la barra, pues lo mejor es realizar un movimiento controlado durante todo el recorrido del ejercicio, de manera que trabajen los músculos antes dichos y evitemos lesiones.",
+                "error3": "Los codos descienden hacia la cintura. Para que el trabajo del pectoral sea correcto, los codos deben descender alineados con los hombros y no debemos tirar los brazos hacia la cintura al bajar la barra."
+            }
+        },
+        {
+            "id": 3,
+            "categoria": "superior",
+            "titulo": "press de banca",
+            "zona": "pecho",
+            "poster": "https://i.ytimg.com/vi/JhcjQHkjklA/sddefault.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652066415/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20SUPERIOR/PECHO/PRESS/1/press1_xpnp5g.mp4",
+            "descripcion1": "Para iniciar la realización del ejercicio es necesario acostarse en un banco plano con los glúteos, caderas y hombros sobre el banco. Los pies deben apoyarse en suelo, separados un poco más allá del ancho de lo hombros. Con las manos debemos tomar la barra de manera que las palmas miren hacia adelante, es decir, en pronación, y separadas ligeramente más allá de la anchura de los hombros.",
+            "descripcion2": "El brazo y el antebrazo deben formar un ángulo de 90º, por lo que debemos flexionar el codo de manera que la barra tomada con las manos quede exactamente encima del pecho.",
+            "descripcion3": "Desde allí debemos inspirar y descender lentamente la barra hacia el pecho, sin despegar la espalda del banco. Una vez la barra esté sobre el pecho debemos empujar hacia arriba mientras espiramos y subimos lentamente los brazos.",
+            "musculos": "Con press de banca solicitamos principalmente el pectoral mayor, aunque también se demanda el trabajo del pectoral menor, los tríceps, el deltoides anterior, los serratos y el coracobraquial.",
+            "errores": {
+                "error1": "Arquear la espalda y despegarla del banco al levantar la barra. Esto puede dañar la espalda al intentar ayudarnos arqueando la misma, donde despegamos al zona lumbar del punto de apoyo.",
+                "error2": "Realizar movimientos bruscos y rebotar. Al ser un ejercicio de musculación los resultados será mejores y el movimiento más seguro si evitamos rebotar la barra contra el pecho, así como si evitamos dar tirones con la barra, pues lo mejor es realizar un movimiento controlado durante todo el recorrido del ejercicio, de manera que trabajen los músculos antes dichos y evitemos lesiones.",
+                "error3": "Los codos descienden hacia la cintura. Para que el trabajo del pectoral sea correcto, los codos deben descender alineados con los hombros y no debemos tirar los brazos hacia la cintura al bajar la barra."
+            }
+        },
+        {
+            "id": 4,
+            "categoria": "superior",
+            "titulo": "press de banca",
+            "zona": "pecho",
+            "poster": "https://i.ytimg.com/vi/JhcjQHkjklA/sddefault.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652066415/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20SUPERIOR/PECHO/PRESS/1/press1_xpnp5g.mp4",
+            "descripcion1": "Para iniciar la realización del ejercicio es necesario acostarse en un banco plano con los glúteos, caderas y hombros sobre el banco. Los pies deben apoyarse en suelo, separados un poco más allá del ancho de lo hombros. Con las manos debemos tomar la barra de manera que las palmas miren hacia adelante, es decir, en pronación, y separadas ligeramente más allá de la anchura de los hombros.",
+            "descripcion2": "El brazo y el antebrazo deben formar un ángulo de 90º, por lo que debemos flexionar el codo de manera que la barra tomada con las manos quede exactamente encima del pecho.",
+            "descripcion3": "Desde allí debemos inspirar y descender lentamente la barra hacia el pecho, sin despegar la espalda del banco. Una vez la barra esté sobre el pecho debemos empujar hacia arriba mientras espiramos y subimos lentamente los brazos.",
+            "musculos": "Con press de banca solicitamos principalmente el pectoral mayor, aunque también se demanda el trabajo del pectoral menor, los tríceps, el deltoides anterior, los serratos y el coracobraquial.",
+            "errores": {
+                "error1": "Arquear la espalda y despegarla del banco al levantar la barra. Esto puede dañar la espalda al intentar ayudarnos arqueando la misma, donde despegamos al zona lumbar del punto de apoyo.",
+                "error2": "Realizar movimientos bruscos y rebotar. Al ser un ejercicio de musculación los resultados será mejores y el movimiento más seguro si evitamos rebotar la barra contra el pecho, así como si evitamos dar tirones con la barra, pues lo mejor es realizar un movimiento controlado durante todo el recorrido del ejercicio, de manera que trabajen los músculos antes dichos y evitemos lesiones.",
+                "error3": "Los codos descienden hacia la cintura. Para que el trabajo del pectoral sea correcto, los codos deben descender alineados con los hombros y no debemos tirar los brazos hacia la cintura al bajar la barra."
+            }
+        },
+        {
+            "id": 5,
+            "categoria": "superior",
+            "titulo": "press de banca",
+            "zona": "pecho",
+            "poster": "https://i.ytimg.com/vi/JhcjQHkjklA/sddefault.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652066415/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20SUPERIOR/PECHO/PRESS/1/press1_xpnp5g.mp4",
+            "descripcion1": "Para iniciar la realización del ejercicio es necesario acostarse en un banco plano con los glúteos, caderas y hombros sobre el banco. Los pies deben apoyarse en suelo, separados un poco más allá del ancho de lo hombros. Con las manos debemos tomar la barra de manera que las palmas miren hacia adelante, es decir, en pronación, y separadas ligeramente más allá de la anchura de los hombros.",
+            "descripcion2": "El brazo y el antebrazo deben formar un ángulo de 90º, por lo que debemos flexionar el codo de manera que la barra tomada con las manos quede exactamente encima del pecho.",
+            "descripcion3": "Desde allí debemos inspirar y descender lentamente la barra hacia el pecho, sin despegar la espalda del banco. Una vez la barra esté sobre el pecho debemos empujar hacia arriba mientras espiramos y subimos lentamente los brazos.",
+            "musculos": "Con press de banca solicitamos principalmente el pectoral mayor, aunque también se demanda el trabajo del pectoral menor, los tríceps, el deltoides anterior, los serratos y el coracobraquial.",
+            "errores": {
+                "error1": "Arquear la espalda y despegarla del banco al levantar la barra. Esto puede dañar la espalda al intentar ayudarnos arqueando la misma, donde despegamos al zona lumbar del punto de apoyo.",
+                "error2": "Realizar movimientos bruscos y rebotar. Al ser un ejercicio de musculación los resultados será mejores y el movimiento más seguro si evitamos rebotar la barra contra el pecho, así como si evitamos dar tirones con la barra, pues lo mejor es realizar un movimiento controlado durante todo el recorrido del ejercicio, de manera que trabajen los músculos antes dichos y evitemos lesiones.",
+                "error3": "Los codos descienden hacia la cintura. Para que el trabajo del pectoral sea correcto, los codos deben descender alineados con los hombros y no debemos tirar los brazos hacia la cintura al bajar la barra."
+            }
+        }
+    ]
+}

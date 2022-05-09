@@ -22,7 +22,7 @@ const reducersEnviar = combineReducers({
     modal: modalReducer,
     fisics: fisicsReducer,
     usuarios: usuariosReducer,
-    comments: commentsReducer
+    comments: commentsReducer,
 })
 
 export const store = createStore(
@@ -37,6 +37,7 @@ store.subscribe(() => {
     guardarLocalStorage(
         {
            modal: store.getState().modal
-        }
+        },
    )
 })
+
