@@ -19,7 +19,7 @@ const Home = () => {
       <div className={classes.home__opacity}>
         <img
           className={classes.home__banner}
-          src="https://cdn.pixabay.com/photo/2021/01/04/06/21/man-5886574_1280.jpg"
+          src="https://cdn.pixabay.com/photo/2018/01/01/01/56/yoga-3053487_960_720.jpg"
           alt="Banner Principal"
         />
         <div className={classes.banner__fadeBottom}></div>
@@ -31,7 +31,10 @@ const Home = () => {
                 <span className={classes.category__workoutSpan}>{image.categoria}</span>
                 </div>
               </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> AndresDev2
               <div className={classes.category__workoutFilter}>
                 
                 <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage({

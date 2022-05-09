@@ -1,25 +1,14 @@
 import { Fade } from "react-reveal";
 import Gallery from "../components/Gallery";
 import { makeStyles } from "@material-ui/core";
-import axios from "axios";
-import { URL } from "../helper/helper";
-import { useState } from "react";
+
 
 const Funcional = ()=>{
     const classes = useStyles();
 
-    // const id = 1;
-    // const [datos, setDatos] = useState([]);
-    // const getData = () => {
-    //     axios.get(URL + id)
-    //         .then((resp) => {
-
-    //         })
-    // }
-
     return(
     <div className={classes.competition}>
-        <img className={classes.competition__banner} src="https://cdn.pixabay.com/photo/2016/11/19/17/20/athlete-1840437_1280.jpg"/>
+        <img className={classes.competition__banner} src="https://cdn.pixabay.com/photo/2016/11/19/17/20/athlete-1840437_1280.jpg" alt="banner"/>
     <div className={classes.competition__container}>
         <div className={classes.competition__boxOne}>
         <h2 className={classes.detail__title}><i>¿Qué es entrenamiento funcional?</i></h2>
@@ -49,6 +38,26 @@ const Funcional = ()=>{
         </div>
         
     </div>
+    <div className={classes.galleryContainer__title}>
+          <p className={classes.galleryContainer__titlePrincipal}>
+            ¡Conoce lo más vendido entre personas activas!
+          </p>
+          <div className={classes.galleryContainer__gallery}>
+            <Fade left>
+              <Gallery categoria="Funcional" />
+            </Fade>
+          </div>
+        </div>
+        <div className={classes.galleryContainer__title}>
+          <div className={classes.galleryContainer__gallery}>
+          <p className={classes.galleryContainer__titlePrincipal}>
+            Activos con más poder
+          </p>
+            <Fade left>
+              <Gallery categoria="Funcional1" />
+            </Fade>
+          </div>
+        </div>
     </div>
     )
 }
@@ -76,7 +85,8 @@ const useStyles = makeStyles((theme) => ({
       detail__text: {
         fontSize: '1.2rem',
         color: '#333',
-        fontWeight: '600'
+        fontWeight: '600',
+        textAlign: 'justify'
     },
       competition__banner: {
           width: '100%',
@@ -112,11 +122,20 @@ const useStyles = makeStyles((theme) => ({
       competition__boxTwoLi: {
         fontSize: '1.3rem',
         color: '#333',
-        fontWeight: '600'
-      }
+        fontWeight: '600',
+        textAlign: 'justify'
+      },
+      galleryContainer__titlePrincipal:{
+        color: '#5C5C5C',
+        fontSize: '2.8rem',
+        fontWeight: '750',
+        fontStyle: 'italic',
+        marginBottom: '.6rem',
+        marginTop: '2rem',
+    },
+    galleryContainer__title: {
+        textAlign: 'center'
+    },
 }))
 
 
-  {/* <Fade right>
-            <Gallery categoria='Competición'/>
-        </Fade> */}
