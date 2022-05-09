@@ -2,7 +2,7 @@ import { Fade } from "react-reveal";
 import Gallery from "../components/Gallery";
 import { makeStyles } from "@material-ui/core";
 import axios from "axios";
-import { URL } from "../helpers/helper";
+import { URL } from "../helper/helper";
 import { useState } from "react";
 
 const Funcional = ()=>{
