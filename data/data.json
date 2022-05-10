@@ -6,8 +6,8 @@
             "titulo": "press de banca",
             "complejidad": 1,
             "zona": "pecho",
-            "image": "https://res.cloudinary.com/duzncuogi/image/upload/v1652146576/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20SUPERIOR/PECHO/PRESS/1/press_kgh3pz.jpg",
-            "poster": "https://i.ytimg.com/vi/JhcjQHkjklA/sddefault.jpg",
+            "image": "https://bulevip.com/blog/wp-content/uploads/2019/09/press-de-banca-musculos.jpg",
+            "poster": "https://bulevip.com/blog/wp-content/uploads/2019/09/press-de-banca-musculos.jpg",
             "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652066415/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20SUPERIOR/PECHO/PRESS/1/press1_xpnp5g.mp4",
             "descripcion1": "Para iniciar la realización del ejercicio es necesario acostarse en un banco plano con los glúteos, caderas y hombros sobre el banco. Los pies deben apoyarse en suelo, separados un poco más allá del ancho de lo hombros. Con las manos debemos tomar la barra de manera que las palmas miren hacia adelante, es decir, en pronación, y separadas ligeramente más allá de la anchura de los hombros.",
             "descripcion2": "El brazo y el antebrazo deben formar un ángulo de 90º, por lo que debemos flexionar el codo de manera que la barra tomada con las manos quede exactamente encima del pecho.",
@@ -169,15 +169,6 @@
                 "error3": "En primer lugar, es básico realizar el ejercicio con la técnica adecuada. Para ello, lee los consejos que te hemos dado en el anterior epígrafe. Una buena técnica te permite realizar las dominadas de forma más eficiente y evitar problemas musculares o de espalda por realizar mal el ejercicio."
             }
         },
-
-
-
-
-
-
-
-
-
         {
             "id": 9,
             "categoria": "superior",
@@ -239,8 +230,195 @@
                 "error2": "Perfecciona la pausa. Pausa en la posición de contracción durante 1-2 segundos cuando aprietes el músculo, reduce la carga ligeramente y a continuación haz una pausa en la posición contraída durante otros dos segundos.",
                 "error3": "Elige tu peso de forma inteligente. Elige un peso que te permita hacer el rango de repeticiones que te propongas pero que además te permita hacer de 1 a 2 más. Realizar repeticiones extra siempre y cuando puedas, es muy aconsejable."
             }
+        },
+        {
+            "id": 12,
+            "categoria": "inferior",
+            "titulo": "zancada trasera",
+            "zona": "piernas",
+            "complejidad": 1,
+            "poster": "https://1.bp.blogspot.com/-SIvucaJkF14/WnH1XKzjKAI/AAAAAAAAAOI/dFsWePJi-moRn6VJPyYzP4rVnJmq0CTPACLcBGAs/s1600/zancadas-lunges-rane-forti.jpg",
+            "image": "https://1.bp.blogspot.com/-SIvucaJkF14/WnH1XKzjKAI/AAAAAAAAAOI/dFsWePJi-moRn6VJPyYzP4rVnJmq0CTPACLcBGAs/s1600/zancadas-lunges-rane-forti.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652196166/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20INFERIOR/2/zancadatrasera_tgyfkn.mp4",
+            "descripcion1": "Dado que la espalda es una zona la cual no te ves constantemente en el espejo, es casi siempre una zona olvidada o dejada en un segundo plano en los entrenamientos. Pero es un grave error pensar así, crear una espalda dominante, amplia y en forma de V, te dará un físico envidiable. Está claro que si quieres un torso bien formado, no te bastará con entrenar los brazos, el pecho y los hombros, sino que deberás integrar los ejercicios destinados a esta zona en cada uno de tus planes de ejercicios.",
+            "descripcion2": "Como puedes ver, las fibras musculares de la espalda funcionan en diferentes ángulos, esto justifica que el uso de diferentes agarres, asas y máquinas durante el entrenamiento te harán trabajar una zona diferente.",
+            "ejercicio": "Empieza con los pies separados a la anchura de las caderas, con los pies apuntando hacia adelante y los brazos delante de ti. Flexiona la rodilla de una pierna y levántala del suelo. Lleva las caderas hacia atrás, flexiona la rodilla de la pierna en la que te sostienes y baja lentamente.",
+            "ejercicio2":"Apoya tu peso sobre la pierna adelantada y mantén el torso recto mientras bajas, flexionando las piernas hasta que describan ángulos de 90 grados.",
+            "ejercicio3": "Como en este ejercicio no hay que mover los pies, siempre hay tensión en el cuádriceps de la pierna adelantada. Así que, en cada repetición, harás un trabajo de resistencia muscular centrado en el muslo. Haz todas las repeticiones de un lado y luego cambia y repite.",
+            "musculos": "Aunque es un ejercicio con una enorme implicación muscular, activa prioritariamente la musculatura de piernas, con dominancia de rodilla, como cuádriceps y sinérgicamente los extensores de cadera y tobillo como isquiosurales, glúteos y gemelos.",
+            "errores": {
+                "error1": "Tienes los talones levantados. Te estás adelantando con las rodillas.",
+                "error2": "Las rodillas no tienen estabilidad. Estás ignorando el núcleo del cuerpo.",
+                "error3": "Elige tu peso de forma inteligente. Elige un peso que te permita hacer el rango de repeticiones que te propongas pero que además te permita hacer de 1 a 2 más. Realizar repeticiones extra siempre y cuando puedas, es muy aconsejable."
+            }
+        },
+        {
+            "id": 13,
+            "categoria": "inferior",
+            "titulo": "squad alternado",
+            "zona": "piernas",
+            "complejidad": 1,
+            "poster": "https://espowerlifting.com/wp-content/uploads/2018/10/sentadillas-bulgaras.png",
+            "image": "https://espowerlifting.com/wp-content/uploads/2018/10/sentadillas-bulgaras.png",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652195655/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20INFERIOR/1/squadalternado_xa1dke.mp4",
+            "descripcion1": "Dado que la espalda es una zona la cual no te ves constantemente en el espejo, es casi siempre una zona olvidada o dejada en un segundo plano en los entrenamientos. Pero es un grave error pensar así, crear una espalda dominante, amplia y en forma de V, te dará un físico envidiable. Está claro que si quieres un torso bien formado, no te bastará con entrenar los brazos, el pecho y los hombros, sino que deberás integrar los ejercicios destinados a esta zona en cada uno de tus planes de ejercicios.",
+            "descripcion2": "Como puedes ver, las fibras musculares de la espalda funcionan en diferentes ángulos, esto justifica que el uso de diferentes agarres, asas y máquinas durante el entrenamiento te harán trabajar una zona diferente.",
+            "ejercicio": "Empieza con los pies separados a la anchura de las caderas, con los pies apuntando hacia adelante y los brazos delante de ti. Flexiona la rodilla de una pierna y levántala del suelo. Lleva las caderas hacia atrás, flexiona la rodilla de la pierna en la que te sostienes y baja lentamente.",
+            "ejercicio2":"Apoya tu peso sobre la pierna adelantada y mantén el torso recto mientras bajas, flexionando las piernas hasta que describan ángulos de 90 grados.",
+            "ejercicio3": "Como en este ejercicio no hay que mover los pies, siempre hay tensión en el cuádriceps de la pierna adelantada. Así que, en cada repetición, harás un trabajo de resistencia muscular centrado en el muslo. Haz todas las repeticiones de un lado y luego cambia y repite.",
+            "musculos": "Aunque es un ejercicio con una enorme implicación muscular, activa prioritariamente la musculatura de piernas, con dominancia de rodilla, como cuádriceps y sinérgicamente los extensores de cadera y tobillo como isquiosurales, glúteos y gemelos.",
+            "errores": {
+                "error1": "Tienes los talones levantados. Te estás adelantando con las rodillas.",
+                "error2": "Las rodillas no tienen estabilidad. Estás ignorando el núcleo del cuerpo.",
+                "error3": "Elige tu peso de forma inteligente. Elige un peso que te permita hacer el rango de repeticiones que te propongas pero que además te permita hacer de 1 a 2 más. Realizar repeticiones extra siempre y cuando puedas, es muy aconsejable."
+            }
+        },
+        {
+            "id": 14,
+            "categoria": "inferior",
+            "titulo": "peso muerto con mancuernas",
+            "zona": "piernas",
+            "complejidad": 2,
+            "poster": "https://i.pinimg.com/474x/6a/91/d5/6a91d5214963f2015667e868ef37cc08.jpg",
+            "image": "https://i.pinimg.com/474x/6a/91/d5/6a91d5214963f2015667e868ef37cc08.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652196477/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20INFERIOR/3/pesomuertomancuerna_e8nyam.mp4",
+            "descripcion1": "Pon la espalda recta y mira hacia adelante en todo momento.",
+            "descripcion2": "Un consejo útil es aprender correctamente la técnica al principio para después empezar a cargar peso, y que la carga sea poca al comienzo para incrementarse de manera progresiva, para solicitar los músculos de las piernas y no sobrecargar la espalda en ningún momento. Utilizar un espejo o una pared.",
+            "ejercicio": "Pon la espalda recta y mira hacia adelante en todo momento.",
+            "ejercicio2":"La cabeza tiene que estar completamente alineada con la espalda.",
+            "ejercicio3": "Para ascender, levanta los hombros y la cadera al mismo tiempo manteniendo la espalda erguida. Una vez has llegado a la posición inicial, vuelve a repetir el movimiento.",
+            "musculos": "Cuando realizamos peso muerto solicitamos sobre todo los músculos situados en la parte posterior de las piernas, ya que al enderezar el torso cargando peso se trabaja el glúteo mayor y los isquiotibiales o femorales.",
+            "errores": {
+                "error1": "Arquear la espalda es el error más frecuente al realizar peso muerto y puede causar daños en la zona lumbar, por eso, mejor evitar cargar un peso excesivo que puede llevarnos a doblar la columna como así también, flexionar las piernas correctamente para que el peso sea levantado con el tren inferior y no con la espalda",
+                "error2": "El cuello queda en la misma linea de la espalda porque de otra forma, nos dolería.",
+                "error3": "Los talones tienen que estar siempre pegados al suelo. El ángulo entre gemelo y cuádriceps tiene que ser menor a 90 grados. El torso nunca debe angularse más de la horizontal."
+            }
+        },
+        {
+            "id": 15,
+            "categoria": "inferior",
+            "titulo": "squad con salto y mancuernas",
+            "zona": "piernas",
+            "complejidad": 3,
+            "poster": "https://alternalego.files.wordpress.com/2014/08/squat-muscles2.jpg",
+            "image": "https://alternalego.files.wordpress.com/2014/08/squat-muscles2.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652196882/samples/Buona-Fit-Demo-Day/EJERCICIOS/TREN%20INFERIOR/4/squadsaltomancuernas_bjhh0a.mp4",
+            "ejercicio": "Como todos tenemos un cuerpo diferente, la posición correcta y la postura del cuerpo para hacer la sentadilla con salto también será diferente para cada uno",
+            "ejercicio2":"Baja hasta llegar a la posición de sentadilla. Para empezar, lleva las caderas hacia atrás y hacia abajo mientras doblas las rodillas. Mantén tu pecho erguido, con la barbilla levantada y la cabeza hacia adelante. Baja lo más que puedas sin dejar la técnica correcta.",
+            "ejercicio3": "Baja de manera controlada y uniforme al hacer la sentadilla, y luego impúlsate tan fuerte como puedas en el salto.",
+            "descripcion1": "La sentadilla con salto es un ejercicio pliométrico de alta intensidad excelente para generar una fuerza explosiva, preparar los músculos y articulaciones de la parte inferior del cuerpo, y aumentar la altura de tu salto vertical.",
+            "descripcion2": "Por su dificultad, las sentadillas con salto se deben realizar correctamente para no lesionarse y aprovechar al máximo el ejercicio. Antes de realizarlas, familiarízate con la posición básica de despegue y aterrizaje, la técnica correcta del salto y la mecánica de crear y absorber la fuerza.",
+            "musculos": "Dobla las rodillas para absorber el impacto. Sigue bajando tu peso después de hacer contacto con los metatarsos del pie. Dobla las rodillas y prepárate con las piernas mientras bajas para disipar poco a poco la fuerza del aterrizaje. Trata de aterrizar lo más suave y fluido que puedas. Esta parte del aterrizaje es muy importante para evitar lesiones. Repite el ejercicio.",
+            "errores": {
+                "error1": "Si alguna parte del movimiento te parece poco natural o te incomoda, modifica tu técnica para que se adapte mejor a tu tipo de cuerpo.",
+                "error2": "Tus rodillas no deben extenderse más allá de los dedos de los pies, porque esto desplaza la tensión de la sentadilla a las articulaciones de la rodilla.",
+                "error3": "Aterrizar de forma segura y correcta. considera la sentadilla con salto como dos movimientos diferentes: la sentadilla y el salto. La sentadilla debe ser fluida como para que puedas hacer la transición directa hacia el salto sin traspiés extraños o desarticulados."
+            }
+        },
+        {
+            "id": 16,
+            "categoria": "core",
+            "titulo": "crunch isómetrico inverso",
+            "zona": "abdomen",
+            "complejidad": 1,
+            "poster": "https://i.blogs.es/1ddec9/crunch/450_1000.jpg",
+            "image": "https://i.blogs.es/1ddec9/crunch/450_1000.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652199210/samples/Buona-Fit-Demo-Day/EJERCICIOS/core/1/crunchisometricoinverso_mjfntr.mp4",
+            "ejercicio": "No muevas los brazos durante el ejercicio. Mueve las piernas dejando los muslos perpendiculares al suelo y mantén los pies juntos (en paralelo al suelo).",
+            "ejercicio2":"Tal cual estás será tu posición inicial. Ahora inhala y mueve las piernas hacia el tronco, haciendo rodar la pelvis en sentido inverso.",
+            "ejercicio3": "Baja de manera controlada y uniforme al hacer la sentadilla, y luego impúlsate tan fuerte como puedas en el salto.",
+            "descripcion1": "Los abdominales son uno de los ejercicios más populares para fortalecer el vientre sin ayuda de máquinas.",
+            "descripcion2": "En pocas palabras, consisten en pasar de una posición tumbada a una sentada al llevar el pecho hacia los muslos. Este movimiento lo podemos realizar especialmente gracias al músculo recto abdominal. Una de las mayores ventajas de este ejercicio es que no necesitas ningún equipamiento para realizarlo, porque se trata de un entrenamiento puramente muscular. Aunque, para darle intensidad y variedad, siempre puedes añadir mancuernas, bandas de resistencia, una pelota de pilates, etc.",
+            "musculos": "Músculo recto abdominal o músculo recto del abdomen. Músculo piriforme o músculo piramidal.  Músculo oblicuo externo y músculo oblicuo interno del abdomen. Músculo psoas mayor (musculus iliopsoas).",
+            "errores": {
+                "error1": "Doblar demasiado la parte superior del cuerpo. Si aún te falta fuerza abdominal, puede que dobles la parte superior de la espalda y la cabeza al levantar el tren superior. Recuerda que, cuando subes, debes hacerlo con la espalda lo más recta posible, arqueando muy poquito la espalda baja. Si no te sale, cíñete de momento al crunch abdominal.",
+                "error2": "Arquearse. Evite a toda costa arquear la espalda al bajar, para protegerla. Empuja la pelvis hacia adelante y mete el ombligo. Mantén esta tensión en el movimiento tanto al subir como al bajar.",
+                "error3": "Tirar de la cabeza y subir de un tirón. No pasa nada por hacer abdominales rápido, siempre y cuando realices movimientos controlados. La fuerza ha de provenir del abdomen, no de las piernas ni los brazos ni la parte superior de la espalda. Cuanto más despacio te muevas, más se te contraerán los músculos."
+            }
+        },
+        {
+            "id": 17,
+            "categoria": "core",
+            "titulo": "elevaciones de piernas en x",
+            "zona": "abdomen",
+            "complejidad": 1,
+            "poster": "https://www.deportesdeciudad.com/wp-content/uploads/2018/07/elevaciones-pierna-con-rotacio%CC%81n-678x509.png",
+            "image": "https://www.deportesdeciudad.com/wp-content/uploads/2018/07/elevaciones-pierna-con-rotacio%CC%81n-678x509.png",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652199727/samples/Buona-Fit-Demo-Day/EJERCICIOS/core/2/elevacionenx_ybsrgv.mp4",
+            "ejercicio": "No muevas los brazos durante el ejercicio. Mueve las piernas dejando los muslos perpendiculares al suelo y mantén los pies juntos (en paralelo al suelo).",
+            "ejercicio2":"Tal cual estás será tu posición inicial. Ahora inhala y mueve las piernas hacia el tronco, haciendo rodar la pelvis en sentido inverso.",
+            "ejercicio3": "Baja de manera controlada y uniforme al hacer la sentadilla, y luego impúlsate tan fuerte como puedas en el salto.",
+            "descripcion1": "Los abdominales son uno de los ejercicios más populares para fortalecer el vientre sin ayuda de máquinas.",
+            "descripcion2": "En pocas palabras, consisten en pasar de una posición tumbada a una sentada al llevar el pecho hacia los muslos. Este movimiento lo podemos realizar especialmente gracias al músculo recto abdominal. Una de las mayores ventajas de este ejercicio es que no necesitas ningún equipamiento para realizarlo, porque se trata de un entrenamiento puramente muscular. Aunque, para darle intensidad y variedad, siempre puedes añadir mancuernas, bandas de resistencia, una pelota de pilates, etc.",
+            "musculos": "Músculo recto abdominal o músculo recto del abdomen. Músculo piriforme o músculo piramidal.  Músculo oblicuo externo y músculo oblicuo interno del abdomen. Músculo psoas mayor (musculus iliopsoas).",
+            "errores": {
+                "error1": "Doblar demasiado la parte superior del cuerpo. Si aún te falta fuerza abdominal, puede que dobles la parte superior de la espalda y la cabeza al levantar el tren superior. Recuerda que, cuando subes, debes hacerlo con la espalda lo más recta posible, arqueando muy poquito la espalda baja. Si no te sale, cíñete de momento al crunch abdominal.",
+                "error2": "Arquearse. Evite a toda costa arquear la espalda al bajar, para protegerla. Empuja la pelvis hacia adelante y mete el ombligo. Mantén esta tensión en el movimiento tanto al subir como al bajar.",
+                "error3": "Tirar de la cabeza y subir de un tirón. No pasa nada por hacer abdominales rápido, siempre y cuando realices movimientos controlados. La fuerza ha de provenir del abdomen, no de las piernas ni los brazos ni la parte superior de la espalda. Cuanto más despacio te muevas, más se te contraerán los músculos."
+            }
+        },
+        {
+            "id": 18,
+            "categoria": "core",
+            "titulo": "empujon en plancha",
+            "zona": "abdomen",
+            "complejidad": 1,
+            "poster": "https://www.ejerciciosparaadelgazar.website/wp-content/uploads/2020/07/plancha-musculos.jpg",
+            "image": "https://www.ejerciciosparaadelgazar.website/wp-content/uploads/2020/07/plancha-musculos.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652199987/samples/Buona-Fit-Demo-Day/EJERCICIOS/core/3/empujonenplancha_fjfku8.mp4",
+            "ejercicio": "No muevas los brazos durante el ejercicio. Mueve las piernas dejando los muslos perpendiculares al suelo y mantén los pies juntos (en paralelo al suelo).",
+            "ejercicio2":"Tal cual estás será tu posición inicial. Ahora inhala y mueve las piernas hacia el tronco, haciendo rodar la pelvis en sentido inverso.",
+            "ejercicio3": "Baja de manera controlada y uniforme al hacer la sentadilla, y luego impúlsate tan fuerte como puedas en el salto.",
+            "descripcion1": "Los abdominales son uno de los ejercicios más populares para fortalecer el vientre sin ayuda de máquinas.",
+            "descripcion2": "En pocas palabras, consisten en pasar de una posición tumbada a una sentada al llevar el pecho hacia los muslos. Este movimiento lo podemos realizar especialmente gracias al músculo recto abdominal. Una de las mayores ventajas de este ejercicio es que no necesitas ningún equipamiento para realizarlo, porque se trata de un entrenamiento puramente muscular. Aunque, para darle intensidad y variedad, siempre puedes añadir mancuernas, bandas de resistencia, una pelota de pilates, etc.",
+            "musculos": "Músculo recto abdominal o músculo recto del abdomen. Músculo piriforme o músculo piramidal.  Músculo oblicuo externo y músculo oblicuo interno del abdomen. Músculo psoas mayor (musculus iliopsoas).",
+            "errores": {
+                "error1": "Doblar demasiado la parte superior del cuerpo. Si aún te falta fuerza abdominal, puede que dobles la parte superior de la espalda y la cabeza al levantar el tren superior. Recuerda que, cuando subes, debes hacerlo con la espalda lo más recta posible, arqueando muy poquito la espalda baja. Si no te sale, cíñete de momento al crunch abdominal.",
+                "error2": "Arquearse. Evite a toda costa arquear la espalda al bajar, para protegerla. Empuja la pelvis hacia adelante y mete el ombligo. Mantén esta tensión en el movimiento tanto al subir como al bajar.",
+                "error3": "Tirar de la cabeza y subir de un tirón. No pasa nada por hacer abdominales rápido, siempre y cuando realices movimientos controlados. La fuerza ha de provenir del abdomen, no de las piernas ni los brazos ni la parte superior de la espalda. Cuanto más despacio te muevas, más se te contraerán los músculos."
+            }
+        },
+        {
+            "id": 19,
+            "categoria": "core",
+            "titulo": "empujon en plancha",
+            "zona": "abdomen",
+            "complejidad": 1,
+            "poster": "https://i.blogs.es/75761a/ejercicio/450_1000.jpg",
+            "image": "https://i.blogs.es/75761a/ejercicio/450_1000.jpg",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652200170/samples/Buona-Fit-Demo-Day/EJERCICIOS/core/4/obliquos_c4j8y0.mp4",
+            "ejercicio": "No muevas los brazos durante el ejercicio. Mueve las piernas dejando los muslos perpendiculares al suelo y mantén los pies juntos (en paralelo al suelo).",
+            "ejercicio2":"Tal cual estás será tu posición inicial. Ahora inhala y mueve las piernas hacia el tronco, haciendo rodar la pelvis en sentido inverso.",
+            "ejercicio3": "Baja de manera controlada y uniforme al hacer la sentadilla, y luego impúlsate tan fuerte como puedas en el salto.",
+            "descripcion1": "Los abdominales son uno de los ejercicios más populares para fortalecer el vientre sin ayuda de máquinas.",
+            "descripcion2": "En pocas palabras, consisten en pasar de una posición tumbada a una sentada al llevar el pecho hacia los muslos. Este movimiento lo podemos realizar especialmente gracias al músculo recto abdominal. Una de las mayores ventajas de este ejercicio es que no necesitas ningún equipamiento para realizarlo, porque se trata de un entrenamiento puramente muscular. Aunque, para darle intensidad y variedad, siempre puedes añadir mancuernas, bandas de resistencia, una pelota de pilates, etc.",
+            "musculos": "Músculo recto abdominal o músculo recto del abdomen. Músculo piriforme o músculo piramidal.  Músculo oblicuo externo y músculo oblicuo interno del abdomen. Músculo psoas mayor (musculus iliopsoas).",
+            "errores": {
+                "error1": "Doblar demasiado la parte superior del cuerpo. Si aún te falta fuerza abdominal, puede que dobles la parte superior de la espalda y la cabeza al levantar el tren superior. Recuerda que, cuando subes, debes hacerlo con la espalda lo más recta posible, arqueando muy poquito la espalda baja. Si no te sale, cíñete de momento al crunch abdominal.",
+                "error2": "Arquearse. Evite a toda costa arquear la espalda al bajar, para protegerla. Empuja la pelvis hacia adelante y mete el ombligo. Mantén esta tensión en el movimiento tanto al subir como al bajar.",
+                "error3": "Tirar de la cabeza y subir de un tirón. No pasa nada por hacer abdominales rápido, siempre y cuando realices movimientos controlados. La fuerza ha de provenir del abdomen, no de las piernas ni los brazos ni la parte superior de la espalda. Cuanto más despacio te muevas, más se te contraerán los músculos."
+            }
+        },
+        {
+            "id": 20,
+            "categoria": "core",
+            "titulo": "rotaciones de piernas controladas",
+            "zona": "abdomen",
+            "complejidad": 1,
+            "poster": "https://paramujerfitness.com/wp-content/uploads/2020/03/Captura-de-Pantalla-2020-03-26-a-las-15.02.38.png",
+            "image": "https://paramujerfitness.com/wp-content/uploads/2020/03/Captura-de-Pantalla-2020-03-26-a-las-15.02.38.png",
+            "video": "https://res.cloudinary.com/duzncuogi/video/upload/v1652200366/samples/Buona-Fit-Demo-Day/EJERCICIOS/core/5/rotacionescontroladas_x8opys.mp4",
+            "ejercicio": "No muevas los brazos durante el ejercicio. Mueve las piernas dejando los muslos perpendiculares al suelo y mantén los pies juntos (en paralelo al suelo).",
+            "ejercicio2":"Tal cual estás será tu posición inicial. Ahora inhala y mueve las piernas hacia el tronco, haciendo rodar la pelvis en sentido inverso.",
+            "ejercicio3": "Baja de manera controlada y uniforme al hacer la sentadilla, y luego impúlsate tan fuerte como puedas en el salto.",
+            "descripcion1": "Los abdominales son uno de los ejercicios más populares para fortalecer el vientre sin ayuda de máquinas.",
+            "descripcion2": "En pocas palabras, consisten en pasar de una posición tumbada a una sentada al llevar el pecho hacia los muslos. Este movimiento lo podemos realizar especialmente gracias al músculo recto abdominal. Una de las mayores ventajas de este ejercicio es que no necesitas ningún equipamiento para realizarlo, porque se trata de un entrenamiento puramente muscular. Aunque, para darle intensidad y variedad, siempre puedes añadir mancuernas, bandas de resistencia, una pelota de pilates, etc.",
+            "musculos": "Músculo recto abdominal o músculo recto del abdomen. Músculo piriforme o músculo piramidal.  Músculo oblicuo externo y músculo oblicuo interno del abdomen. Músculo psoas mayor (musculus iliopsoas).",
+            "errores": {
+                "error1": "Doblar demasiado la parte superior del cuerpo. Si aún te falta fuerza abdominal, puede que dobles la parte superior de la espalda y la cabeza al levantar el tren superior. Recuerda que, cuando subes, debes hacerlo con la espalda lo más recta posible, arqueando muy poquito la espalda baja. Si no te sale, cíñete de momento al crunch abdominal.",
+                "error2": "Arquearse. Evite a toda costa arquear la espalda al bajar, para protegerla. Empuja la pelvis hacia adelante y mete el ombligo. Mantén esta tensión en el movimiento tanto al subir como al bajar.",
+                "error3": "Tirar de la cabeza y subir de un tirón. No pasa nada por hacer abdominales rápido, siempre y cuando realices movimientos controlados. La fuerza ha de provenir del abdomen, no de las piernas ni los brazos ni la parte superior de la espalda. Cuanto más despacio te muevas, más se te contraerán los músculos."
+            }
         }
-
-
     ]
 }

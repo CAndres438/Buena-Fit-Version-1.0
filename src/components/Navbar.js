@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
         width: '98%',
         margin: '0 auto',
         display: 'flex',
+        paddingRight: '2.2rem',
         justifyContent: 'flex-end',
         alignItems: 'center',
         gap: theme.spacing(2),
