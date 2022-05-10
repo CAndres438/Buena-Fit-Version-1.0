@@ -64,7 +64,7 @@ function Training() {
           </div>
           <div className={classes.content__filterDetails}>
             <h2>{ categoria }</h2>
-            <h2>{ complejidad }</h2>
+            <h2>{ (complejidad == 1)? 'FÁCIL': (complejidad == 2)? "NORMAL" : "DÍFICIL" }</h2>
             <h2>{ value }</h2>
           </div>
         </div>
