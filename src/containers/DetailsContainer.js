@@ -97,7 +97,7 @@ const DetailsContainer = ({product = initialState}) => {
         <div className={classes.details__containerInfoFlex}>
           <div className={classes.details__boxInfoFlex}>
             <Typography className={classes.details__infoLabel}>
-              Categoria 
+              Categoría 
             </Typography>
             <Typography className={classes.details__infoText}>
               {modal.categoria}
@@ -108,14 +108,14 @@ const DetailsContainer = ({product = initialState}) => {
               Sabor
             </Typography>
             <Typography className={classes.details__infoText}>
-              Aun no en bd
+              {modal.sabor}
             </Typography>
           </div>
           <div className={classes.details__boxInfoFlex}>
             <Typography className={classes.details__infoLabel}>
-              Gramos
+              Contenido
             </Typography>
-            <Typography className={classes.details__infoText}>Aun no en bd</Typography>
+            <Typography className={classes.details__infoText}>{modal.gramos}</Typography>
           </div>
         </div>
         {/*  */}

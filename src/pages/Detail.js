@@ -32,7 +32,7 @@ const Detail = () => {
         
         <div className={classes.detail__boxTitle}>
           <Typography className={classes.detail__title}><i>DETALLES</i></Typography>
-          <Typography>GNC Lorem Ipsum dolor Amet bla bla bla bla GNC Lorem Ipsum dolor Amet bla bla bla blaGNC Lorem Ipsum dolor Amet bla bla bla blaGNC Lorem Ipsum dolor Amet bla bla bla bla</Typography>
+          <Typography>{product.detalles}</Typography>
           
         </div>
         <div className={classes.detail__boxTitle} style={{
@@ -40,16 +40,16 @@ const Detail = () => {
           borderBottom: '3px solid #5C5C5C',
         }}>
           <Typography className={classes.detail__title}><i>INGREDIENTES</i></Typography>
-          <Typography>GNC Lorem Ipsum dolor Amet bla bla bla bla GNC Lorem Ipsum dolor Amet bla bla bla blaGNC Lorem Ipsum dolor Amet bla bla bla blaGNC Lorem Ipsum dolor Amet bla bla bla bla</Typography>
+          <Typography>{product.ingredientes}</Typography>
           
         </div>
         <div className={classes.detail__boxTitle}>
           <Typography className={classes.detail__title}><i>INSTRUCCIONES DE USO</i></Typography>
-          <Typography>GNC Lorem Ipsum dolor Amet bla bla bla bla GNC Lorem Ipsum dolor Amet bla bla bla blaGNC Lorem Ipsum dolor Amet bla bla bla blaGNC Lorem Ipsum dolor Amet bla bla bla bla</Typography>
+          <Typography>{product.instrucciones}</Typography>
         </div>
         <div className={classes.detail__boxWarning}>
           <MarkPrice>Warning</MarkPrice>
-          <DarkTypographyStyled>MANTENGASE FUERA DEL ALCANCE DE LOS NIÑOS.</DarkTypographyStyled>
+          <DarkTypographyStyled>{product.warnings}</DarkTypographyStyled>
         </div>
         <div className={classes.galleryContainer__title}>
         <GrayTitleStyled>OTROS PRODUCTOS</GrayTitleStyled>
