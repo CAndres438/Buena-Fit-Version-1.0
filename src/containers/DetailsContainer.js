@@ -13,7 +13,7 @@ import { formatoCOP } from "../utils/Moneda";
 import ShoppingCart from "@material-ui/icons/ShoppingCart";
 
 const initialState = {
-  nombre: 'jose',
+  nombre: 'Producto De Ejemplo',
   codigo: 'normal',
   precio: 20000,
   image__front: 'https://funat.co/wp-content/uploads/2021/07/MONTAJE-22AA.jpg',
@@ -30,7 +30,11 @@ const DetailsContainer = ({product = initialState}) => {
   const [image, setImage] = useState("");
 
   useEffect(() => {
-    setImage(modal.image__front);
+    if(!modal.image__front) {
+      setImage('https://funat.co/wp-content/uploads/2021/07/MONTAJE-22AA.jpg');
+    } else {
+      setImage(modal.image__front);
+    }
   }, [modal]);
 
   const addToCart = (productCart) => {
@@ -40,9 +44,9 @@ const DetailsContainer = ({product = initialState}) => {
   return (
     <div className={classes.details}>
       <div className={classes.details__options}>
-      <img onMouseEnter={() => setImage(product.image__front)} className={classes.details__optionImage} src={product.image__front} alt='front'/>
+      <img onMouseEnter={() => setImage(product.image__front)} className={product.image__front?classes.details__optionImage : classes.displayNone} src={product.image__front? product.image__front : product.image__front} alt='front'/>
       <img onMouseEnter={() => setImage(product.image__lateral)} className={product.image__lateral?classes.details__optionImage : classes.displayNone} src={product.image__lateral? product.image__lateral : product.image__front} alt='lateral'/>
-      <img onMouseEnter={() => setImage(product.image__back)} className={product.image__lateral?classes.details__optionImage : classes.displayNone} src={product.image_back? product.image__back: product.image__front} alt='back'/>
+      <img onMouseEnter={() => setImage(product.image__back)} className={product.image__back?classes.details__optionImage : classes.displayNone} src={product.image_back? product.image__back: product.image__front} alt='back'/>
       </div>
       {/* Card Detail */}
       <div className={classes.details__detail2}>

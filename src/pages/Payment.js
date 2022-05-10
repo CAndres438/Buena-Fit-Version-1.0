@@ -145,13 +145,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
   },
   payment__container: {
+    width: '90%',
+    margin: '0 auto',
     "& h1": {
       textAlign: "center",
       padding: theme.spacing(1),
       fontWeight: "400",
-      backgroundColor: "black",
-      borderTop: "1px solid white",
-      borderBottom: "1px solid white",
+      backgroundColor: "#FFF",
+      borderTop: "2px solid #5C5C5C",
+      borderBottom: "2px solid #5C5C5C",
       color:'white',
       "& a": {
         textDecoration: "none",
@@ -161,7 +163,7 @@ const useStyles = makeStyles((theme) => ({
   pay:{
     background: '#FFCE00',
     borderRadius: '5px',
-    color: 'black',
+    color: '#000',
     fontSize: '12px',
     fontWeight: '700'
   },
@@ -171,16 +173,16 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 2px",
     borderRadius: "5px",
     borderBottom: "1px solid lightgray",
-    color: "white",
-    background: "black"
+    color: "#000",
+    background: "#FFF"
   },
   payment__title: {
     flex: "0.2",
-    color: "white"
+    color: "#000"
   },
   payment__address: {
     flex: "0.8",
-    color: "white"
+    color: "#000"
   },
   payment__details: {
     flex: "0.8",
@@ -188,7 +190,7 @@ const useStyles = makeStyles((theme) => ({
   },
   payment__items: {
     flex: "0.8",
-    background: "black"
+    background: "#FFF"
   },
 }));
 

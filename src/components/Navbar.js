@@ -17,13 +17,7 @@ const Navbar = () => {
                 <Link className={classes.header__link} to='/support'>SOPORTE</Link>
 
             </div>
-            <div className={classes.header__search}>
-                <input 
-                className={classes.header__searchInput}
-                type='search'
-                />
-                <SearchIcon className={classes.header__searchIcon}/>
-            </div>
+           
         </div>
     </div>
   )
