@@ -7,7 +7,7 @@ const Gain = ()=>{
     const classes = useStyles();
     return(
     <div className={classes.competition}>
-        <img className={classes.competition__banner} src="https://cdn.pixabay.com/photo/2016/11/19/17/20/athlete-1840437_1280.jpg" alt="banner"/>
+        <img className={classes.competition__banner} src="https://cdn.pixabay.com/photo/2021/01/03/03/43/man-5883500_960_720.jpg" alt="banner"/>
     <div className={classes.competition__container}>
         <div className={classes.competition__boxOne}>
         <h2 className={classes.detail__title}><i>¿CÓMO GANAR MASA MÚSCULAR?</i></h2>

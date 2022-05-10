@@ -10,7 +10,7 @@ const Competition = ()=>{
       <div className={classes.competition}>
         <img
           className={classes.competition__banner}
-          src="https://cdn.pixabay.com/photo/2016/11/19/17/20/athlete-1840437_1280.jpg"
+          src="https://cdn.pixabay.com/photo/2015/07/27/09/51/spot-862274_960_720.jpg"
           alt="atletismo"
         />
         <div className={classes.competition__container}>

@@ -8,7 +8,7 @@ const Funcional = ()=>{
 
     return(
     <div className={classes.competition}>
-        <img className={classes.competition__banner} src="https://cdn.pixabay.com/photo/2016/11/19/17/20/athlete-1840437_1280.jpg" alt="banner"/>
+        <img className={classes.competition__banner} src="https://cdn.pixabay.com/photo/2017/11/28/09/16/woman-2983129_960_720.jpg" alt="banner"/>
     <div className={classes.competition__container}>
         <div className={classes.competition__boxOne}>
         <h2 className={classes.detail__title}><i>¿Qué es entrenamiento funcional?</i></h2>
