@@ -31,10 +31,7 @@ const Home = () => {
                 <span className={classes.category__workoutSpan}>{image.categoria}</span>
                 </div>
               </div>
-<<<<<<< HEAD
 
-=======
->>>>>>> AndresDev2
               <div className={classes.category__workoutFilter}>
                 
                 <div className={classes.category__workoutPathBox} onMouseEnter={() => setImage({
