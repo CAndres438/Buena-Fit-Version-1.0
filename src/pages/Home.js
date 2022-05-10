@@ -1,6 +1,5 @@
 import { makeStyles } from "@material-ui/core";
 import SupportEngine from "../SupportEngine";
-import { GrayLightTypographyStyled, GrayTitleStyled } from '../styled/styledComponents'
 import GalleryContainer from "../containers/GalleryContainer";
 import MapView from "./MapView";
 import Footer from "../components/Footer";
@@ -71,6 +70,7 @@ const Home = () => {
                  <Link to="/compite"><img className={classes.category__workoutImagePath} src="https://cdn.pixabay.com/photo/2015/07/27/09/51/spot-862274_960_720.jpg" alt="Workout Filter 1"/></Link> 
                 </div>
               </div>
+              
         </div>
       <SupportEngine />
 
@@ -248,6 +248,10 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: 'center',
       padding: '0 15rem',
       position: 'relative',
+      [theme.breakpoints.down('sm')]: {
+        padding: '0',
+        gridTemplateColumns: 'repeat(4, 1fr)'
+      }
     },
     category__workoutPathBox: {
       width: '240px',
@@ -255,9 +259,8 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: '#FFF',
       clipPath: 'polygon(35% 0, 100% 0, 65% 100%, 0% 100%)',
       position: 'absolute',
-      zIndex: 1000
-      // zIndex: '100000'
-    },
+      zIndex: 1000,
+     },
     category__workoutImagePath: {
       width: '100%',
       height: '100%',
@@ -270,6 +273,13 @@ const useStyles = makeStyles((theme) => ({
         transform: 'scale(1.1)',
         opacity: '.6'
       },
+      [theme.breakpoints.down('sm')]: {
+        position: 'relative',
+        clipPath: 'none',
+        margin: '0',
+        padding: '0',
+       
+      }
     }
 }));
 

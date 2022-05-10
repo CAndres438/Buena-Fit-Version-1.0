@@ -31,7 +31,7 @@ const Checkout = () => {
     <div className={classes.cart}>
       <div className={classes.cart__container}>
         <div className={classes.cart__containerTitle}>
-          <GrayTitleStyled>CARRITO DE COMPRA</GrayTitleStyled>
+          <h2 className={classes.cart__title}><i>CARRITO DE COMPRA</i></h2>
           <ShoppingCartIcon />
         </div>
         <div className={classes.cart__container}>
@@ -131,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     gap: theme.spacing(1),
-    color: "white",
+    color: "#333",
   },
   cart__order: {
     width: "100%",
@@ -145,6 +145,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-between",
   },
+  cart__title: {
+    fontSize: '2.4rem',
+    color: '#5C5C5C',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    margin: '2rem 0',
+    textTransform: 'uppercase'
+  }
 }));
 
 export default Checkout;

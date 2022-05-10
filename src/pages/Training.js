@@ -8,71 +8,31 @@ import { useDispatch } from 'react-redux';
 // import { selectedModal } from './redux/actions/actionModal';
 import { URL } from '../helper/helper';
 
-const initialState = [
-  {
-    id: 1,
-    name: "npc_dota_hero_antimage",
-    localized_name: "Anti-Mage",
-    primary_attr: "agi",
-    attack_type: "Melee",
-    poster: "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/antimage.png",
-    animation: "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/antimage.webm",
-    image: "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/antimage.png",
-    avatar: "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png",
-    roles: [
-      "Carry",
-      "Escape",
-      "Nuker"
-    ],    
-    img: "/apps/dota2/images/dota_react/heroes/antimage.png?",
-    icon: "/apps/dota2/images/dota_react/heroes/icons/antimage.png?",
-    base_health: 200,
-    base_health_regen: 0.25,
-    base_mana: 75,
-    base_mana_regen: 0,
-    base_armor: 0,
-    base_mr: 25,
-    base_attack_min: 29,
-    base_attack_max: 33,
-    base_str: 21,
-    base_agi: 24,
-    base_int: 12,
-    str_gain: 1.6,
-    agi_gain: 2.8,
-    int_gain: 1.8,
-    attack_range: 150,
-    projectile_speed: 0,
-    attack_rate: 1.4,
-    move_speed: 310,
-    turn_rate: null,
-    cm_enabled: true,
-    legs: 2
-  }
-]
+const initialState = []
 
 function Training() {
   const classes = useStyles();
  const [characters, setCharacters] = useState(initialState);
+ const [categoria, setCategoria] = useState('superior');
+ const [complejidad, setComplejidad] = useState(1)
+ const [value, setValue] = useState('');
 
   console.log(characters);
 
   useEffect(() => {
   const getCharacters = async () => {
     const movies = await axios.get(URL);
-    console.log(movies.data);
     const characterData = movies.data;
     setCharacters(characterData);    
    }
     getCharacters();
   }, [])
 
-  const dispatch = useDispatch();
-
-  const navigate = useNavigate();
-  
-  // const selectHero = (item) => {
-    // dispatch(selectedExercise(item));
-    // navigate('/exercise/');
+  // const handleChange = ({target}) => {
+  //   const { value } = target;
+  //   const dataFilter = characters.filter((item) => item.zona.toLocaleLowerCase().includes(value.toLocaleLowerCase()));
+  //   console.log(dataFilter)
+  //   setCharacters(dataFilter);
   // }
 
   return (
@@ -87,20 +47,25 @@ function Training() {
           <div className={classes.content__filterContent}>
           <h2 className={classes.content__filterTitle}>CATEGORÍA</h2>
           <div className={classes.content__filterBox}>
-            <div className={classes.content__filterIcon} style={{backgroundImage: 'url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/herogrid/filter-str-active.png")'}}/>
-            <div className={classes.content__filterIcon} style={{backgroundImage: 'url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/herogrid/filter-agi-active.png")'}}/>
-            <div className={classes.content__filterIcon} style={{backgroundImage: 'url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/herogrid/filter-int-active.png"")'}}/>
+            <div onClick={() => setCategoria('superior')} className={classes.content__filterIcon}/>
+            <div onClick={() => setCategoria('inferior')} className={classes.content__filterIcon}/>
+            <div onClick={() => setCategoria('core')} className={classes.content__filterIcon}/>
           </div>
           <h2 className={classes.content__filterTitle}>COMPLEJIDAD</h2>
           <div className={classes.content__filterBox} >
-            <div className={classes.content__filterIcon} />
-            <div className={classes.content__filterIcon} />
-            <div className={classes.content__filterIcon} />
+            <div onClick={() => setComplejidad(1)} className={classes.content__filterIcon} />
+            <div onClick={() => setComplejidad(2)} className={classes.content__filterIcon} />
+            <div onClick={() => setComplejidad(3)} className={classes.content__filterIcon} />
           </div>
           <div className={classes.content__search}>
           <img className={classes.content__searchIcon} src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/1200px-Vector_search_icon.svg.png' alt='Search Icon'/>
-          <input type='text' className={classes.content__searchInput}/>
+          <input placeholder="Elíge que quieres trabajar ..." onChange={(e) => setValue(e.target.value)} type='text' className={classes.content__searchInput}/>
           </div>
+          </div>
+          <div className={classes.content__filterDetails}>
+            <h2>{ categoria }</h2>
+            <h2>{ complejidad }</h2>
+            <h2>{ value }</h2>
           </div>
         </div>
         <div className={classes.grid}>
@@ -109,7 +74,28 @@ function Training() {
       {
         // characters.map((item) => (
         // ))
+
+        (complejidad == 1 && categoria == 'superior' && value == '')?
+        // .filter((item) => item.categoria === categoria)
+        // .filter((item) => item.complejidad === complejidad)
+        // .filter((item) => item.zona.toLocaleLowerCase().includes(value.toLocaleLowerCase()))
         characters.map((item) => (
+          <div key={item.id} >
+            {/* <Link to={`hero/${item.id}`}> */}
+            <Link to={`/exercise/${item.id}`}>
+            <div className={classes.gridContentItem}>
+            <img className={classes.gridItem} src={item.poster} />
+            <h2 className={classes.gridItemTitle}>{ item.titulo }</h2>
+            </div>
+            </Link>
+            {/* </Link> */}
+          </div>
+
+        )): characters
+        .filter((item) => item.categoria === categoria)
+        .filter((item) => item.complejidad === complejidad)
+        .filter((item) => item.zona.toLocaleLowerCase().includes(value.toLocaleLowerCase()))
+        .map((item) => (
           <div key={item.id} >
             
             {/* <Link to={`hero/${item.id}`}> */}
@@ -145,6 +131,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
     gap: theme.spacing(3),
+    minHeight: '40vh',
+    [theme.breakpoints.down('sm')]: {
+      gridTemplateColumns: 'repeat(2, 1fr)',
+    }
   },
   gridItem: {
     width: '100%',
@@ -152,7 +142,6 @@ const useStyles = makeStyles((theme) => ({
     cursor: 'pointer',
     borderRadius: '1px',
     zIndex: '100',
- 
   },
   gridContentItem:{
     position: 'relative',
@@ -168,10 +157,10 @@ const useStyles = makeStyles((theme) => ({
       opacity: '.9',
       transform: 'scale(1.2)',
       '& h2': {
-        top: '55%',
+        top: '40%',
       },
       '& img': {
-        opacity: '.9'
+        opacity: '.4'
       }
     }
   },
@@ -222,8 +211,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     margin: '2rem 0',
     padding: '1rem 0',
-    backgroundColor: 'rgb(15,17,20)',
-    background: 'linear-gradient(90deg, rgba(15,17,20,1) 0%, rgba(19,23,27,1) 44%, rgba(31,39,43,1) 57%, rgba(70,80,86,1) 100%)'
+    backgroundColor: '#111'
   },
   content__filterContent: {
     width: '100%',
@@ -236,14 +224,15 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     backgroundColor: '#25282A',
     padding: theme.spacing(1),
-    flex: '.6'
+    flex: '.6',
   },
   content__searchInput: {
     background: 'transparent',
     padding: '.8rem .4rem',
     outline: 'none',
     border: 'none',
-    color: '#FFF'
+    color: '#FFF',
+    fontSize: '1.2rem'
   },
   content__searchIcon: {
     width: '40px',
@@ -267,7 +256,14 @@ const useStyles = makeStyles((theme) => ({
     filter: 'brightness(0.5) saturate(0)',
     cursor: 'pointer'
   },
- 
+  content__filterDetails: {
+    width: '100%',
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 3fr)',
+    padding: '0 1rem',
+    textAlign: 'center',
+    textTransform: 'uppercase'
+  }
 }))
 
 export default Training;
