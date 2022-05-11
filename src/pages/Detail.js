@@ -63,13 +63,13 @@ const Detail = () => {
         <div className={classes.galleryContainer__title}>
           <GrayTitleStyled>OTROS PRODUCTOS</GrayTitleStyled>
           <DarkTypographyStyled>¡OBTEN RESULTADOS!</DarkTypographyStyled>
-          <Link to="/detalle">
+         
             <div className={classes.galleryContainer__gallery}>
               <Fade right>
                 <Gallery categoria="Definición" />
               </Fade>
             </div>
-          </Link>
+          
         </div>
 
         {/* Comments */}
