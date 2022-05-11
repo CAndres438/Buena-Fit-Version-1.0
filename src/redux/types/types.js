@@ -8,15 +8,6 @@ export const typesRegister ={
     register: 'register'
 }
 
-export const typesFisicos ={
-    add: 'add',
-    list: 'list',
-    edit: 'edit',
-    delete: 'delete',
-    detail: 'detail',
-    search : 'search',
-    addFormik: 'addFormik'
-}
 
 export const typesProductos ={
     add: 'add',

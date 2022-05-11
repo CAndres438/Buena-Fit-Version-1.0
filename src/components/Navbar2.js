@@ -2,21 +2,19 @@ import React from "react";
 import { makeStyles } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar2 = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.navbar}>
       <div className={classes.navbar__container}>
         <div className={classes.header__links}>
+          <div className={classes.header__frase}>Tu mejor versión</div>
           <Link className={classes.header__link} to="/buonaTest">
             BUONA TEST
           </Link>
           <Link className={classes.header__link} to="/training">
             ENTRENAMIENTOS
-          </Link>
-          <Link className={classes.header__link} to="/support">
-            SOPORTE
           </Link>
         </div>
       </div>
@@ -77,10 +75,13 @@ const useStyles = makeStyles((theme) => ({
     outline: "none",
     borderRadius: "2px",
   },
+  header__frase: {
+    color: "white",
+  },
   header__searchIcon: {
     height: "22px !important",
     backgroundColor: "#FFF",
   },
 }));
 
-export default Navbar;
+export default Navbar2;

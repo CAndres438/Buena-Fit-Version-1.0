@@ -1,8 +1,6 @@
 
 import { Navigate, Route, Routes } from "react-router-dom"
 import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import Fisics from "../pages/Fisics";
 import  Home  from "../pages/Home";
 import DashboardAdminRoutes from "./DashboardAdminRoutes";
 
@@ -35,7 +33,7 @@ const DashboardRoutes = ({userAdmin}) => {
                 <Route path="/" element={<Home />} />
                 <Route path="/products" element={<Category />} />
                 <Route path="/cart" element={<Cart />} />
-                {/* <Route path="/category" element={<Category />} /> */}
+    
                 <Route path="/detalle" element={<Detail />} />
 
                 <Route path="/buonaTest" element={<BuonaTest/>}/>
@@ -47,7 +45,6 @@ const DashboardRoutes = ({userAdmin}) => {
                 <Route path="/training" element={<Training/>}/>
                 <Route path="/exercise/:id" element={<Exercise />}/>
 
-                {/* <Route path="/blog" element={<Blog />} /> */}
                 <Route path="/payment" element={
                     <div>
                         <Elements stripe={promise}>

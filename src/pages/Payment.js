@@ -11,7 +11,6 @@ import { getAuth } from "firebase/auth";
 //Material UI
 import { makeStyles } from "@material-ui/core";
 
-
 const Payment = () => {
   const classes = useStyles();
 
@@ -126,7 +125,10 @@ const Payment = () => {
                   thousandSeparator={true}
                   prefix={"$"}
                 />
-                <button className={classes.pay} disabled={processing || disabled || succeeded}>
+                <button
+                  className={classes.pay}
+                  disabled={processing || disabled || succeeded}
+                >
                   <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                 </button>
               </div>
@@ -145,8 +147,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "white",
   },
   payment__container: {
-    width: '90%',
-    margin: '0 auto',
+    width: "90%",
+    margin: "0 auto",
     "& h1": {
       textAlign: "center",
       padding: theme.spacing(1),
@@ -154,18 +156,18 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: "#FFF",
       borderTop: "2px solid #5C5C5C",
       borderBottom: "2px solid #5C5C5C",
-      color:'white',
+      color: "white",
       "& a": {
         textDecoration: "none",
       },
     },
   },
-  pay:{
-    background: '#FFCE00',
-    borderRadius: '5px',
-    color: '#000',
-    fontSize: '12px',
-    fontWeight: '700'
+  pay: {
+    background: "#FFCE00",
+    borderRadius: "5px",
+    color: "#000",
+    fontSize: "12px",
+    fontWeight: "700",
   },
   payment__section: {
     display: "flex",
@@ -174,23 +176,22 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "5px",
     borderBottom: "1px solid lightgray",
     color: "#000",
-    background: "#FFF"
+    background: "#FFF",
   },
   payment__title: {
     flex: "0.2",
-    color: "#000"
+    color: "#000",
   },
   payment__address: {
     flex: "0.8",
-    color: "#000"
+    color: "#000",
   },
   payment__details: {
     flex: "0.8",
-    
   },
   payment__items: {
     flex: "0.8",
-    background: "#FFF"
+    background: "#FFF",
   },
 }));
 

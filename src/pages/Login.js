@@ -1,11 +1,19 @@
 import { useDispatch } from "react-redux";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useForm } from "../hooks/useForm";
-import { loginWithEmailPassAsync, loginGoogle, loginFacebook } from "../redux/actions/actionLogin";
+import {
+  loginWithEmailPassAsync,
+  loginGoogle,
+  loginFacebook,
+} from "../redux/actions/actionLogin";
 import { makeStyles } from "@material-ui/core";
-import { ButtonFacebook, ButtonGoogle, LinkRedirect } from "../styled/styledComponents";
-import googleIcon from '../assets/google.png';
-import facebookIcon from '../assets/facebook.png';
+import {
+  ButtonFacebook,
+  ButtonGoogle,
+  LinkRedirect,
+} from "../styled/styledComponents";
+import googleIcon from "../assets/google.png";
+import facebookIcon from "../assets/facebook.png";
 
 const Login = () => {
   const classes = useStyles();
@@ -42,7 +50,7 @@ const Login = () => {
       <div className={classes.root__sidebar}>
         <img
           className={classes.root__sidebarImage}
-          src="https://cdn.pixabay.com/photo/2016/03/27/07/08/man-1282232_960_720.jpg"
+          src="https://cdn.pixabay.com/photo/2018/04/04/16/44/kettlebell-3290296_960_720.jpg"
           alt="sidebar auth"
         />
       </div>
@@ -117,7 +125,6 @@ const useStyles = makeStyles((theme) => ({
   root__sidebarImage: {
     width: "100%",
     height: "auto",
-    borderRadius: "5px",
   },
 
   login__logo: {
@@ -130,7 +137,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   login__container: {
-    width: "360px",
+    width: "440px",
     height: "100%",
     color: "#FFF",
     backgroundColor: "rgb(19,19,21)",
@@ -141,7 +148,8 @@ const useStyles = makeStyles((theme) => ({
     padding: "20px",
     marginLeft: "0px",
     marginRight: "10px",
-    borderRadius: "5px",
+    
+    borderRadius:"0 5px 5px 0",
     "& h1": {
       fontWeight: "500",
       marginBottom: "20px",
@@ -163,7 +171,7 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
       borderRadius: "5px",
       fontWeight: "600",
-      paddingLeft: "5px"
+      paddingLeft: "5px",
     },
   },
   login__signInButton: {

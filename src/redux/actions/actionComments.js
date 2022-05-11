@@ -12,7 +12,6 @@ export const listCommentsAsync = () => {
                 ...doc.data()
             })
         })
-        console.log(comments);
         dispatch(listCommentsSync(comments));
     }
 }
@@ -26,11 +25,9 @@ export const listCommentsSync = (comments) => {
 
 //-------------agregar---------------//
 export const addCommentAsync = (comment) => {
-    console.log(comment);
     return (dispatch) => {
         addDoc(collection(db, "posts"), comment)
             .then(resp => {
-                console.log(resp, 'add comment async');
                 dispatch(addCommentSync(comment));
             })
             .catch(error => {
@@ -43,7 +40,7 @@ export const addCommentAsync = (comment) => {
 
 //-------------agregar---------------//
 export const addPostFirestore = (email, pass, name, role, uid) => {
-    console.log( pass, name,  'firestore');
+   
     let user = {
         email: email,
         password: pass,

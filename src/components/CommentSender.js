@@ -3,14 +3,12 @@ import React, { useEffect, useState } from 'react'
 //Material UI
 import { Avatar, makeStyles } from '@material-ui/core';
 import { useDispatch } from 'react-redux';
-import { addCommentAsync, listCommentsAsync } from '../redux/actions/actionComments';
+import { addCommentAsync} from '../redux/actions/actionComments';
 
 const CommentSender = ({user, product}) => {
   const classes = useStyles();
   const [input, setInput] = useState('');
   const dispatch = useDispatch();
-
-  console.log('USSSSSSER IN COMMENT SENDER', product );
 
   const date = new Date();
 
@@ -28,11 +26,8 @@ const CommentSender = ({user, product}) => {
   }
 
   useEffect(() => {
-
   }, [])
   
-
-
   return (
     <div className={classes.commentSender}>
       <div className={classes.commentSender__top}>

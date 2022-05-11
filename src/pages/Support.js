@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 
 const Support = () => {
-    const classes = useStyles();
+  const classes = useStyles();
   return (
     <div className={classes.home}>
       <div className={classes.home__opacity}>
@@ -16,19 +16,18 @@ const Support = () => {
   );
 };
 
-const useStyles = makeStyles ((theme) => ({
-    home: {
-      width: "100%",
-      position: "relative",
-      height: "100vh",
-    },
-    home__opacity: {
-      position: "relative",
-    },
-    home__banner: {
-      width: "100%",
-      position: "relative",
-    },
-
+const useStyles = makeStyles((theme) => ({
+  home: {
+    width: "100%",
+    position: "relative",
+    height: "100vh",
+  },
+  home__opacity: {
+    position: "relative",
+  },
+  home__banner: {
+    width: "100%",
+    position: "relative",
+  },
 }));
 export default Support;
