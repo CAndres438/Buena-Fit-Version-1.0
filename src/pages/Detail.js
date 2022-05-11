@@ -13,7 +13,7 @@ import Fade from "react-reveal/Fade";
 import CommentsContainer from "../containers/CommentsContainer";
 import Footer from "../components/Footer";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+
 
 const Detail = () => {
   const classes = useStyles();
@@ -63,7 +63,6 @@ const Detail = () => {
         <div className={classes.galleryContainer__title}>
           <GrayTitleStyled>OTROS PRODUCTOS</GrayTitleStyled>
           <DarkTypographyStyled>¡OBTEN RESULTADOS!</DarkTypographyStyled>
-         
             <div className={classes.galleryContainer__gallery}>
               <Fade right>
                 <Gallery categoria="Definición" />
