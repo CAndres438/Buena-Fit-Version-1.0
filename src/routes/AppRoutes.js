@@ -15,14 +15,12 @@ const AppRoutes = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userAdmin, setUserAdmin] = useState(null);
 
-  // const { usuarios } = useSelector(store => store.usuarios);
-
   async function getRol(uid) {
     const docuRef = doc(db, `usuarios/${uid}`);
     const docuCifrada = await getDoc(docuRef);
     const infoFinal = docuCifrada.data().role;
-    
-    return infoFinal
+
+    return infoFinal;
   }
 
   async function setUserWithFirebaseAndRol(usuarioFirebase) {
@@ -30,10 +28,10 @@ const AppRoutes = () => {
       const userData = {
         uid: usuarioFirebase.uid,
         email: usuarioFirebase.email,
-        role: role
+        role: role,
       };
       setUserAdmin(userData);
-      console.log("user Data admin", userData);
+      localStorage.setItem("llave", JSON.stringify(userData.role));
     });
   }
 
@@ -55,7 +53,6 @@ const AppRoutes = () => {
       // dispatch(searchAsync(user.email))
       if (user?.uid) {
         setIsLoggedIn(true);
-        console.log('usuario app routes');
       } else {
         setIsLoggedIn(false);
       }

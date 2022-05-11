@@ -1,7 +1,6 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunk from "redux-thunk";
 import { guardarLocalStorage, obtenerLocalStorage } from "../../utils/LocalStorage";
-import { fisicsReducer } from "../reducers/fisicsReducer";
 import { productsReducer } from "../reducers/productsReducer";
 import { loginReducer } from "../reducers/loginReducer";
 import { shoppingCartReducer } from "../reducers/shoppingCartReducer";
@@ -20,7 +19,6 @@ const reducersEnviar = combineReducers({
     products: productsReducer,
     cart: shoppingCartReducer,
     modal: modalReducer,
-    fisics: fisicsReducer,
     usuarios: usuariosReducer,
     comments: commentsReducer,
 })

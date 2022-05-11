@@ -1,16 +1,20 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
-import { useForm } from '../hooks/useForm';
+import { useForm } from "../hooks/useForm";
 
-import { registerAsync } from '../redux/actions/actionRegister';
+import { registerAsync } from "../redux/actions/actionRegister";
 //Material UI
-import { makeStyles } from '@material-ui/core';
-import { ButtonFacebook1, ButtonGoogle1, LinkRedirect } from '../styled/styledComponents';
-import { loginFacebook, loginGoogle } from '../redux/actions/actionLogin';
-import googleIcon from '../assets/google.png';
-import facebookIcon from '../assets/facebook.png';
+import { makeStyles } from "@material-ui/core";
+import {
+  ButtonFacebook,
+  ButtonGoogle,
+  LinkRedirect,
+} from "../styled/styledComponents";
+import { loginFacebook, loginGoogle } from "../redux/actions/actionLogin";
+import googleIcon from "../assets/google.png";
+import facebookIcon from "../assets/facebook.png";
 
 const Register = () => {
   const classes = useStyles();
@@ -49,7 +53,7 @@ const Register = () => {
       <div className={classes.root__sidebar}>
         <img
           className={classes.root__sidebarImage}
-          src="https://cdn.pixabay.com/photo/2016/03/27/07/08/man-1282232_960_720.jpg"
+          src="https://cdn.pixabay.com/photo/2018/04/04/16/44/kettlebell-3290296_960_720.jpg"
           alt="sidebar auth"
         />
       </div>
@@ -95,7 +99,7 @@ const Register = () => {
             Registro y Logueo
           </button>
 
-          <ButtonGoogle1 type="button" onClick={handleGoogle}>
+          <ButtonGoogle type="button" onClick={handleGoogle}>
             <img
               width="20px"
               height="20px"
@@ -103,9 +107,9 @@ const Register = () => {
               alt="Google Icon"
             />
             SignUp with Google
-          </ButtonGoogle1>
+          </ButtonGoogle>
 
-          <ButtonFacebook1 type="button" onClick={handleFacebook}>
+          <ButtonFacebook type="button" onClick={handleFacebook}>
             <img
               width="20px"
               height="20px"
@@ -113,7 +117,7 @@ const Register = () => {
               alt="Facebook Icon"
             />
             SignUp with Facebook
-          </ButtonFacebook1>
+          </ButtonFacebook>
         </form>
         <h3>Buona Fit</h3>
         <LinkRedirect to="/login">Inicio de Sesión</LinkRedirect>
@@ -147,7 +151,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "auto",
   },
   login__container: {
-    width: "360px",
+    width: "440px",
     height: "100%",
     color: "#FFF",
     backgroundColor: "rgb(19,19,21)",
@@ -170,25 +174,24 @@ const useStyles = makeStyles((theme) => ({
   },
 
   form: {
-    
     "& h5": {
       marginBottom: "5px",
     },
     "& input": {
-      height: "25px",
+      height: "40px",
       marginBottom: "10px",
       backgroundColor: "white",
       width: "100%",
       borderRadius: "5px",
       fontWeight: "600",
-      paddingLeft: "5px"
+      paddingLeft: "5px",
     },
     "& select": {
-      height: "25px",
+      height: "40px",
       width: "100%",
       borderRadius: "5px",
       fontWeight: "600",
-      paddingLeft: "5px"
+      paddingLeft: "5px",
     },
   },
   login__signUpButton: {
@@ -196,7 +199,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "5px",
     color: "white",
     width: "100%",
-    height: "25px",
+    height: "40px",
     border: "1px solid",
     marginTop: "10px",
     borderColor: "white",

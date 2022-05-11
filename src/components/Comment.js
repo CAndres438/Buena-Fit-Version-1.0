@@ -9,12 +9,11 @@ import SendIcon from '@material-ui/icons/Send';
 
 const Comment = ({profilePic, image, username, timestamp, message, product}) => {
   const classes = useStyles();
-//   console.log('product in comment', product);
+
   return (
     <div className={classes.root}>
         <div className={classes.comment__boxFlex}>
             <Avatar className={classes.comment__avatar} src={profilePic} alt='Avatar'/>
-            {/* <img className={classes.comment__avatar} src='https://foros.proyectomila.net/uploads/avatars/avatar_3099.jpg?dateline=1594534017' alt='Avatar Profile'/> */}
             <TypographyStyled>{username}</TypographyStyled>
         </div>
 

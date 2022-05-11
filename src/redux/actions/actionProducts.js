@@ -3,18 +3,17 @@ import { db } from "../../firebase/firebaseConfig";
 import { typesProductos } from "../types/types";
  
 export const editAsync = (nombre, producto) => {
-    console.log(nombre, producto);
+ 
     return async (dispatch) => {
         const collectionTraer = collection(db, "productosDB");
         const q = query(collectionTraer, where("nombre","==", nombre ));
         const traerDatosQ = await getDocs(q);
-        console.log(q, traerDatosQ);
         let id;
         traerDatosQ.forEach( async (docu) => {
-            // console.log('DOCU', docu.id);
+          
             id = docu.id;
         })
-        // console.log(id);
+  
         const documRef = doc(db, "productosDB", id)
         await updateDoc(documRef, producto)
             .then(resp => {
