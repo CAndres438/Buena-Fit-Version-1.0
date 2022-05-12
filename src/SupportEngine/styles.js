@@ -40,7 +40,7 @@ export const styles = {
         zIndex: '10000',
         // Size
         width: '420px',
-        height: '340px',
+        height: '440px',
         maxWidth: 'calc(100% - 48px)',
         maxHeight: 'calc(100% - 48px)',
         backgroundColor: 'white',
