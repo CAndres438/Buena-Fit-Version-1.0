@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react"
 import { styles } from "../styles"
 
 import axios from 'axios'
-import { ButtonSecondary } from '../../../src/styled/styledComponents';
-// import { LoadingOutlined } from '@ant-design/icons'
 
 import Avatar from '../Avatar'
 import { getAuth, onAuthStateChanged } from "firebase/auth"
@@ -16,19 +14,13 @@ const EmailForm = props => {
     useEffect(() => {
         const auth = getAuth()
         onAuthStateChanged(auth, (user)=>{
-            // dispatch(searchAsync(user.email))
             if(user?.uid){
-            //   setIsLoggedIn(true);
-              console.log('usuario app emailFormChat', user.email);
               setEmail(user.email);
             }
             else{
-                // setIsLoggedIn(false)
             }
-            // setChecking(false)
         })
     
-        // [setIsLoggedIn, setChecking]
      },[]);
     
 
@@ -46,16 +38,11 @@ const EmailForm = props => {
         .catch(e => console.log('Get or create user error', e))
     }
 
-    // console.log('project',process.env.REACT_APP_CE_PROJECT_ID); => HACER UN USE MEMO DE ESTE COMPONENTE
-    // console.log(process.env.REACT_APP_CE_PRIVATE_KEY);
-
-
     function getOrCreateChat(callback) {
         axios.put(
             'https://api.chatengine.io/chats/',
             {usernames: ['cbum',email], is_direct_chat: true},
             {headers: {
-                // "Private-Key":process.env.REACT_APP_CE_PRIVATE_KEY,
                 "Private-Key":'6bd1c2d7-e58b-4cdb-8283-d8fc75ffcf6a',
                 "User-Name": email,
                 "User-Secret": email,
@@ -110,19 +97,6 @@ const EmailForm = props => {
                     }
                 }}
             />
-            {/* <LoadingOutlined
-                className='transition-5'
-                style={{
-                    ...styles.loadingIcon,
-                    ...{ 
-                        zIndex: loading ? '10' : '-1',
-                        opacity: loading ? '1' : '0',
-                        fontSize: '82px',
-                        top: 'calc(50% - 41px)', 
-                        left: 'calc(50% - 41px)',  
-                    }
-                }}
-            /> */}
 
             <div style={{ position: 'absolute', height: '100%', width: '100%', textAlign: 'center' }}>
                 <Avatar 
@@ -134,7 +108,7 @@ const EmailForm = props => {
                 />
 
                 <div style={styles.topText}>
-                    Welcome to my <br /> support 👋
+                    Bienvenido<br /> al chat de Apoyo 👋
                 </div>
 
                 <form 
@@ -143,22 +117,13 @@ const EmailForm = props => {
                 >
                     <input 
                         placeholder='Enter'
-                        // onChange={e => setEmail(e.target.value)}
                         style={styles.emailInput}
                     />
-                    {/* <ButtonSecondary
-                    style={{
-                        position: 'absolute',
-                        left: '50%',
-                        transform: 'translateX(-50%)'
-                    }}
-                    >
-                        EMPEZAR A CHATEAR
-                    </ButtonSecondary> */}
+                  
                 </form>
                 
                 <div style={styles.bottomText}>
-                    Enter the chat<br /> to get started.
+                    Pregunta lo que <br />quieras
                 </div>
             </div>
         </div>
