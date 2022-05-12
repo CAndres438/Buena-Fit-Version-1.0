@@ -110,50 +110,50 @@ const Exercise = () => {
 
           <div className={classes.divider__roles}>
           <div>
-              <h2 className={classes.divider__statisticsTitle}>preparación</h2>
+              <h2 className={classes.divider__statisticsTitle}>preparación <b>{exercise.preparacion}%</b></h2>
               <progress className={classes.progress} value={exercise.preparacion} min="0" max="100"></progress>
             </div>
 
             <div>
-              <h2 className={classes.divider__statisticsTitle}>Duración</h2>
+              <h2 className={classes.divider__statisticsTitle}>Duración <b>{exercise.duracion}min - 30min</b></h2>
               <progress className={classes.progress} value={exercise.duracion} min="0" max="30"></progress>
             </div>
 
             <div>
-              <h2 className={classes.divider__statisticsTitle}>Complejidad</h2>
+              <h2 className={classes.divider__statisticsTitle}>Complejidad <b>{exercise.complejidad} - 3</b></h2>
               <progress className={classes.progress} value={exercise.complejidad} min="0" max="3"></progress>
             </div>
 
             {/*  */}
             <div>
-              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[0]}</h2>
+              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[0]} {exercise?.musculosPorcentajes[1]}%</h2>
               <progress className={classes.progress} value={exercise?.musculosPorcentajes[1]} min="0" max="100"></progress>
             </div>
 
             <div>
-              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[2]}</h2>
+              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[2]} {exercise?.musculosPorcentajes[3]}%</h2>
               <progress className={classes.progress} value={exercise?.musculosPorcentajes[3]} min="0" max="100"></progress>
             </div>
 
             <div>
-              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[4]}</h2>
+              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[4]} {exercise?.musculosPorcentajes[5]}%</h2>
               <progress className={classes.progress} value={exercise?.musculosPorcentajes[5]} min="0" max="100"></progress>
             </div>
 
             {/*  */}
 
             <div>
-              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[6]}</h2>
+              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[6]} {exercise?.musculosPorcentajes[7]}%</h2>
               <progress className={classes.progress} value={exercise?.musculosPorcentajes[7]} min="0" max="100"></progress>
             </div>
 
             <div>
-              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[8]}</h2>
+              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[8]} {exercise?.musculosPorcentajes[9]}%</h2>
               <progress className={classes.progress} value={exercise?.musculosPorcentajes[9]} min="0" max="100"></progress>
             </div>
 
             <div>
-              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[10]}</h2>
+              <h2 className={classes.divider__statisticsTitle}>{exercise?.musculosPorcentajes[10]} {exercise?.musculosPorcentajes[11]}%</h2>
               <progress className={classes.progress} value={exercise?.musculosPorcentajes[11]} min="0" max="100"></progress>
             </div>
 
