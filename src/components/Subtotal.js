@@ -20,7 +20,7 @@ const Subtotal = () => {
         renderText={(value) => (
           <>
             <p>
-              ({cart.length} items): <strong>{value}</strong>
+              ({cart.length} elementos): <strong>{value}</strong>
             </p>
             <small className={classes.subtotal__gift}>
               <input type="checkbox" />

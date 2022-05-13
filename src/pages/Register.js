@@ -37,6 +37,9 @@ const Register = () => {
     reset();
     navigate("/");
   };
+  const handleNavigate=()=>{
+    navigate("/login")
+}
 
   const handleGoogle = () => {
     dispatch(loginGoogle());
@@ -86,7 +89,7 @@ const Register = () => {
             <option value="admin">Administrador</option>
           </select>
 
-          <h5>Password</h5>
+          <h5>Contraseña</h5>
           <input
             type="password"
             name="password"
@@ -106,7 +109,7 @@ const Register = () => {
               src={googleIcon}
               alt="Google Icon"
             />
-            SignUp with Google
+            Registro con Google
           </ButtonGoogle>
 
           <ButtonFacebook type="button" onClick={handleFacebook}>
@@ -116,11 +119,11 @@ const Register = () => {
               src={facebookIcon}
               alt="Facebook Icon"
             />
-            SignUp with Facebook
+            Registro con Facebook
           </ButtonFacebook>
         </form>
-        <h3>Buona Fit</h3>
-        <LinkRedirect to="/login">Inicio de Sesión</LinkRedirect>
+        <button type="submit" className={classes.login__signInButton1} onClick={handleNavigate}>Inicio de Sesión</button>
+        <h3 style={{marginTop:"2rem"}}>Buona Fit</h3>
       </div>
     </div>
   );
@@ -208,6 +211,20 @@ const useStyles = makeStyles((theme) => ({
       opacity: ".9",
     },
   },
+  login__signInButton1: {
+    background: "#5c5c5c",
+    borderRadius: "5px",
+    color: "white",
+    width: "100%",
+    height: "40px",
+    border: "0.5px solid",
+    marginTop: "10px",
+    borderColor: "white",
+    cursor: "pointer",
+    "&:hover": {
+      opacity: ".9",
+    },
+},
 }));
 
 export default Register;

@@ -49,7 +49,7 @@ const Category = () => {
         {/* flex */}
         <div className={classes.category__containerFlex}>
           <div className={classes.category__containerFlexLineOne}>
-            <h2 className={classes.detail__title}>Trending Products</h2>
+            <h2 className={classes.detail__title}>Productos Tendencia</h2>
             <div className={classes.category__contentFlex}>
               <h4
                 className={classes.category__option}

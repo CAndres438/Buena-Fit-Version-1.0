@@ -40,6 +40,10 @@ const Login = () => {
     navigate("/");
   };
 
+  const handleNavigate=()=>{
+      navigate("/register")
+  }
+
   const handleFacebook = () => {
     dispatch(loginFacebook());
     navigate("/");
@@ -59,7 +63,7 @@ const Login = () => {
         <h1>Inicio de Sesión</h1>
 
         <form onSubmit={handleSubmit} className={classes.form}>
-          <h5>E-mail</h5>
+          <h5>Correo Electrónico</h5>
           <input
             type="email"
             name="email"
@@ -68,7 +72,7 @@ const Login = () => {
             onChange={handleInputChange}
           />
 
-          <h5>Password</h5>
+          <h5>Contraseña</h5>
           <input
             type="password"
             name="password"
@@ -88,7 +92,7 @@ const Login = () => {
               src={googleIcon}
               alt="Google Icon"
             />
-            SignIn with Google
+            Inicio con Google
           </ButtonGoogle>
 
           <ButtonFacebook type="button" onClick={handleFacebook}>
@@ -98,11 +102,11 @@ const Login = () => {
               src={facebookIcon}
               alt="Facebook Icon"
             />
-            SignIn with Facebook
+            Inicio con Facebook
           </ButtonFacebook>
         </form>
-        <h3>Buona Fit</h3>
-        <LinkRedirect to="/register">Registro</LinkRedirect>
+        <button type="submit" className={classes.login__signInButton1} onClick={handleNavigate}>Registro</button>
+        <h3 style={{marginTop:"2rem"}}>Buona Fit</h3>
       </div>
     </div>
   );
@@ -187,7 +191,23 @@ const useStyles = makeStyles((theme) => ({
     "&:hover": {
       opacity: ".9",
     },
+    
   },
+
+  login__signInButton1: {
+    background: "#5c5c5c",
+    borderRadius: "5px",
+    color: "white",
+    width: "100%",
+    height: "40px",
+    border: "0.5px solid",
+    marginTop: "10px",
+    borderColor: "white",
+    cursor: "pointer",
+    "&:hover": {
+      opacity: ".9",
+    },
+},
 }));
 
 export default Login;

@@ -70,7 +70,7 @@ const Header = () => {
                     : user.displayName}
                 </span>
 
-                {user ? "Sign Out" : "Sign In"}
+                {user ? "Cerrar Sesión" : "Inicio de Sesión"}
                 <PersonIcon />
               </div>
             </Link>
