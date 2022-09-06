@@ -1,6 +1,6 @@
 export const FileUp = async (file) => {
     
-    const urlCloudinary = 'https://api.cloudinary.com/v1_1/daalu/upload'
+    const urlCloudinary = 'https://api.cloudinary.com/v1_1/cortiz/upload'
 
     const formData = new FormData()
 
